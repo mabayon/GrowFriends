@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (5.6.2)
+  - Cuckoo (1.8.1):
+    - Cuckoo/Swift (= 1.8.1)
+  - Cuckoo/Swift (1.8.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - RxBlocking (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+  - Swinject (2.8.2)
+
+DEPENDENCIES:
+  - Cuckoo (= 1.8.1)
+  - Moya (= 15.0.0)
+  - RxBlocking (= 6.5.0)
+  - RxSwift (= 6.5.0)
+  - SnapKit (= 5.6.0)
+  - Swinject (= 2.8.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cuckoo
+    - Moya
+    - RxBlocking
+    - RxSwift
+    - SnapKit
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Cuckoo: be1dc6cac793247a0873348e3343bd232577d162
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
+
+PODFILE CHECKSUM: 05ff2b42305384f62a59d316e9e17197b44d4463
+
+COCOAPODS: 1.11.3
