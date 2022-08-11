@@ -4,6 +4,12 @@ whotest[0]='test' || (echo 'Failure: arrays not supported in this version of bas
 
 # Please don't forget to sort by filename
 testableFiles=(
+    "ContactRepository.swift"
+    "ContactServiceApi.swift"
+    "ContactsListPresenterImpl.swift"
+    "GetContactsUseCase.swift"
+    "NetworkMoyaProviders.swift"
+    "Sessions.swift"
 )
 
 for file in ${testableFiles[@]}; do

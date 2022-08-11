@@ -8,6 +8,7 @@ target 'GrowFriend' do
   # Pods for GrowFriend
   # ignore all warnings from all pods
 	inhibit_all_warnings!
+  pod 'Kingfisher', '= 7.3.2'
 	pod 'Moya', '= 15.0.0'
 	pod 'RxSwift', '= 6.5.0'
 	pod 'SnapKit', '= 5.6.0'
@@ -19,10 +20,6 @@ target 'GrowFriend' do
 	pod 'Cuckoo', '= 1.8.1'
 	pod 'Moya', '= 15.0.0'
 	pod 'RxBlocking', '= 6.5.0'
-  end
-
-  target 'GrowFriendUITests' do
-    # Pods for testing
   end
 
 end
