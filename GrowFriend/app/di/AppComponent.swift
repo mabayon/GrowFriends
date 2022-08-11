@@ -13,16 +13,24 @@ extension Assembler {
         let container = Container()
         let assembler = Assembler([
             // App
+            AppAssembly(),
 
             // DataSource
+            DataSourceAssembly(),
 
             // Network
-
+            RouterAssembly(),
+            ServiceApiAssembly(),
+            SessionsAssembly(),
+            
             // Presenter
-
+            ContactPresenterAssembly(),
+            
             // Repository
-
+            NetworkRepositoryAssembly(),
+            
             // Use Case
+            ContactUseCaseAssembly()
         ], container: container)
 
         return assembler
