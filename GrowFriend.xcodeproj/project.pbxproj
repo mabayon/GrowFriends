@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1351D39A39BDFCC2E2340A87 /* Pods_GrowFriend_GrowFriendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4964B76587FFF1385868643 /* Pods_GrowFriend_GrowFriendUITests.framework */; };
+		36A174BD43206C6396DB98DC /* Pods_GrowFriendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C81320A6CB3EE1FCF52437 /* Pods_GrowFriendTests.framework */; };
 		4EEC15F728A2E9AB00ADAB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC15F628A2E9AB00ADAB3A /* AppDelegate.swift */; };
 		4EEC15F928A2E9AB00ADAB3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC15F828A2E9AB00ADAB3A /* SceneDelegate.swift */; };
-		4EEC15FB28A2E9AB00ADAB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC15FA28A2E9AB00ADAB3A /* ViewController.swift */; };
-		4EEC15FE28A2E9AB00ADAB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC15FC28A2E9AB00ADAB3A /* Main.storyboard */; };
 		4EEC160028A2E9AC00ADAB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC15FF28A2E9AC00ADAB3A /* Assets.xcassets */; };
 		4EEC160328A2E9AC00ADAB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC160128A2E9AC00ADAB3A /* LaunchScreen.storyboard */; };
-		4EEC160E28A2E9AC00ADAB3A /* GrowFriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC160D28A2E9AC00ADAB3A /* GrowFriendTests.swift */; };
 		4EEC161828A2E9AC00ADAB3A /* GrowFriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC161728A2E9AC00ADAB3A /* GrowFriendUITests.swift */; };
 		4EEC161A28A2E9AC00ADAB3A /* GrowFriendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC161928A2E9AC00ADAB3A /* GrowFriendUITestsLaunchTests.swift */; };
+		4EFFD56428A2F00000EFFBF5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFD56328A2F00000EFFBF5 /* AppComponent.swift */; };
+		4EFFD56928A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFD56828A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift */; };
+		4EFFD56D28A2F21900EFFBF5 /* CuckooFileListChecker.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFD56C28A2F21900EFFBF5 /* CuckooFileListChecker.sh */; };
+		4EFFD57628A2F38100EFFBF5 /* TestAppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFD57528A2F38100EFFBF5 /* TestAppComponent.swift */; };
+		7B5B56BD3D22F9A86780AE4B /* Pods_GrowFriend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895A0B566BB515F303FA0A4C /* Pods_GrowFriend.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +40,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02F687C59FE75BE344C27D1A /* Pods-GrowFriend-GrowFriendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriend-GrowFriendUITests.release.xcconfig"; path = "Target Support Files/Pods-GrowFriend-GrowFriendUITests/Pods-GrowFriend-GrowFriendUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4EEC15F328A2E9AB00ADAB3A /* GrowFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEC15F628A2E9AB00ADAB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EEC15F828A2E9AB00ADAB3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EEC15FA28A2E9AB00ADAB3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4EEC15FD28A2E9AB00ADAB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EEC15FF28A2E9AC00ADAB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EEC160228A2E9AC00ADAB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EEC160428A2E9AC00ADAB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EEC160928A2E9AC00ADAB3A /* GrowFriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowFriendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EEC160D28A2E9AC00ADAB3A /* GrowFriendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowFriendTests.swift; sourceTree = "<group>"; };
 		4EEC161328A2E9AC00ADAB3A /* GrowFriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowFriendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEC161728A2E9AC00ADAB3A /* GrowFriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowFriendUITests.swift; sourceTree = "<group>"; };
 		4EEC161928A2E9AC00ADAB3A /* GrowFriendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowFriendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EFFD56328A2F00000EFFBF5 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		4EFFD56828A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDescriptible.swift; sourceTree = "<group>"; };
+		4EFFD56C28A2F21900EFFBF5 /* CuckooFileListChecker.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CuckooFileListChecker.sh; sourceTree = "<group>"; };
+		4EFFD57528A2F38100EFFBF5 /* TestAppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppComponent.swift; sourceTree = "<group>"; };
+		5DB5DEB437AE66B7E5BE7AD9 /* Pods-GrowFriend-GrowFriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriend-GrowFriendUITests.debug.xcconfig"; path = "Target Support Files/Pods-GrowFriend-GrowFriendUITests/Pods-GrowFriend-GrowFriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7269456979D6686A1E19D704 /* Pods-GrowFriendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriendTests.release.xcconfig"; path = "Target Support Files/Pods-GrowFriendTests/Pods-GrowFriendTests.release.xcconfig"; sourceTree = "<group>"; };
+		895A0B566BB515F303FA0A4C /* Pods_GrowFriend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowFriend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DD8FD4D0FF8518139722B95 /* Pods-GrowFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriend.release.xcconfig"; path = "Target Support Files/Pods-GrowFriend/Pods-GrowFriend.release.xcconfig"; sourceTree = "<group>"; };
+		B2C81320A6CB3EE1FCF52437 /* Pods_GrowFriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowFriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E6027D1EBF0E3BF76C28C1 /* Pods-GrowFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriend.debug.xcconfig"; path = "Target Support Files/Pods-GrowFriend/Pods-GrowFriend.debug.xcconfig"; sourceTree = "<group>"; };
+		D4964B76587FFF1385868643 /* Pods_GrowFriend_GrowFriendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowFriend_GrowFriendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23209D1E02F0ED6B9E51A47 /* Pods-GrowFriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriendTests.debug.xcconfig"; path = "Target Support Files/Pods-GrowFriendTests/Pods-GrowFriendTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5B56BD3D22F9A86780AE4B /* Pods_GrowFriend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A174BD43206C6396DB98DC /* Pods_GrowFriendTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1351D39A39BDFCC2E2340A87 /* Pods_GrowFriend_GrowFriendUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				4EEC160C28A2E9AC00ADAB3A /* GrowFriendTests */,
 				4EEC161628A2E9AC00ADAB3A /* GrowFriendUITests */,
 				4EEC15F428A2E9AB00ADAB3A /* Products */,
+				E1CA39A6E31BBFFA6D65D42F /* Pods */,
+				A97A6138C45AF2F123F22274 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +118,8 @@
 		4EEC15F528A2E9AB00ADAB3A /* GrowFriend */ = {
 			isa = PBXGroup;
 			children = (
-				4EEC15F628A2E9AB00ADAB3A /* AppDelegate.swift */,
-				4EEC15F828A2E9AB00ADAB3A /* SceneDelegate.swift */,
-				4EEC15FA28A2E9AB00ADAB3A /* ViewController.swift */,
-				4EEC15FC28A2E9AB00ADAB3A /* Main.storyboard */,
-				4EEC15FF28A2E9AC00ADAB3A /* Assets.xcassets */,
-				4EEC160128A2E9AC00ADAB3A /* LaunchScreen.storyboard */,
-				4EEC160428A2E9AC00ADAB3A /* Info.plist */,
+				4EFFD56128A2EFDE00EFFBF5 /* app */,
+				4EFFD56B28A2F1AC00EFFBF5 /* supportingFiles */,
 			);
 			path = GrowFriend;
 			sourceTree = "<group>";
@@ -113,7 +127,7 @@
 		4EEC160C28A2E9AC00ADAB3A /* GrowFriendTests */ = {
 			isa = PBXGroup;
 			children = (
-				4EEC160D28A2E9AC00ADAB3A /* GrowFriendTests.swift */,
+				4EFFD57128A2F34200EFFBF5 /* utils */,
 			);
 			path = GrowFriendTests;
 			sourceTree = "<group>";
@@ -127,6 +141,107 @@
 			path = GrowFriendUITests;
 			sourceTree = "<group>";
 		};
+		4EFFD56128A2EFDE00EFFBF5 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD56228A2EFE200EFFBF5 /* di */,
+				4EFFD56528A2F08400EFFBF5 /* modules */,
+				4EFFD56728A2F0E900EFFBF5 /* utils */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		4EFFD56228A2EFE200EFFBF5 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD56328A2F00000EFFBF5 /* AppComponent.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		4EFFD56528A2F08400EFFBF5 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD56628A2F08700EFFBF5 /* main */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		4EFFD56628A2F08700EFFBF5 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4EEC15F628A2E9AB00ADAB3A /* AppDelegate.swift */,
+				4EEC15F828A2E9AB00ADAB3A /* SceneDelegate.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4EFFD56728A2F0E900EFFBF5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD56A28A2F10B00EFFBF5 /* ViewExtensions */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		4EFFD56A28A2F10B00EFFBF5 /* ViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD56828A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift */,
+			);
+			path = ViewExtensions;
+			sourceTree = "<group>";
+		};
+		4EFFD56B28A2F1AC00EFFBF5 /* supportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4EEC15FF28A2E9AC00ADAB3A /* Assets.xcassets */,
+				4EEC160128A2E9AC00ADAB3A /* LaunchScreen.storyboard */,
+				4EEC160428A2E9AC00ADAB3A /* Info.plist */,
+				4EFFD56C28A2F21900EFFBF5 /* CuckooFileListChecker.sh */,
+			);
+			path = supportingFiles;
+			sourceTree = "<group>";
+		};
+		4EFFD57128A2F34200EFFBF5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD57228A2F34600EFFBF5 /* di */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		4EFFD57228A2F34600EFFBF5 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFD57528A2F38100EFFBF5 /* TestAppComponent.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		A97A6138C45AF2F123F22274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				895A0B566BB515F303FA0A4C /* Pods_GrowFriend.framework */,
+				D4964B76587FFF1385868643 /* Pods_GrowFriend_GrowFriendUITests.framework */,
+				B2C81320A6CB3EE1FCF52437 /* Pods_GrowFriendTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1CA39A6E31BBFFA6D65D42F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2E6027D1EBF0E3BF76C28C1 /* Pods-GrowFriend.debug.xcconfig */,
+				9DD8FD4D0FF8518139722B95 /* Pods-GrowFriend.release.xcconfig */,
+				5DB5DEB437AE66B7E5BE7AD9 /* Pods-GrowFriend-GrowFriendUITests.debug.xcconfig */,
+				02F687C59FE75BE344C27D1A /* Pods-GrowFriend-GrowFriendUITests.release.xcconfig */,
+				F23209D1E02F0ED6B9E51A47 /* Pods-GrowFriendTests.debug.xcconfig */,
+				7269456979D6686A1E19D704 /* Pods-GrowFriendTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EEC161D28A2E9AC00ADAB3A /* Build configuration list for PBXNativeTarget "GrowFriend" */;
 			buildPhases = (
+				88F01E20A30A1F6CE76265E0 /* [CP] Check Pods Manifest.lock */,
 				4EEC15EF28A2E9AB00ADAB3A /* Sources */,
 				4EEC15F028A2E9AB00ADAB3A /* Frameworks */,
 				4EEC15F128A2E9AB00ADAB3A /* Resources */,
+				EE6B4162EAF10A94A76B13E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EEC162028A2E9AC00ADAB3A /* Build configuration list for PBXNativeTarget "GrowFriendTests" */;
 			buildPhases = (
+				337DCFA318D3103842750BB5 /* [CP] Check Pods Manifest.lock */,
 				4EEC160528A2E9AC00ADAB3A /* Sources */,
 				4EEC160628A2E9AC00ADAB3A /* Frameworks */,
 				4EEC160728A2E9AC00ADAB3A /* Resources */,
+				025F7487471C7DB838E8969D /* [CP] Embed Pods Frameworks */,
+				4EFFD57728A2F86200EFFBF5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EEC162328A2E9AC00ADAB3A /* Build configuration list for PBXNativeTarget "GrowFriendUITests" */;
 			buildPhases = (
+				84A7A7A402C93941EA460C3C /* [CP] Check Pods Manifest.lock */,
 				4EEC160F28A2E9AC00ADAB3A /* Sources */,
 				4EEC161028A2E9AC00ADAB3A /* Frameworks */,
 				4EEC161128A2E9AC00ADAB3A /* Resources */,
+				99B6DAB89BF24557EBEC294E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +320,7 @@
 					};
 					4EEC160828A2E9AC00ADAB3A = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 						TestTargetID = 4EEC15F228A2E9AB00ADAB3A;
 					};
 					4EEC161228A2E9AC00ADAB3A = {
@@ -232,8 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EEC160328A2E9AC00ADAB3A /* LaunchScreen.storyboard in Resources */,
+				4EFFD56D28A2F21900EFFBF5 /* CuckooFileListChecker.sh in Resources */,
 				4EEC160028A2E9AC00ADAB3A /* Assets.xcassets in Resources */,
-				4EEC15FE28A2E9AB00ADAB3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +376,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		025F7487471C7DB838E8969D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowFriendTests/Pods-GrowFriendTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowFriendTests/Pods-GrowFriendTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrowFriendTests/Pods-GrowFriendTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		337DCFA318D3103842750BB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrowFriendTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFFD57728A2F86200EFFBF5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $ACTION != \"indexbuild\" ]; then\n# Define output file. Change \"$PROJECT_DIR/Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/GrowFriendTests/GeneratedMocks.swift\"\n\n# Define input directory. Change \"$PROJECT_DIR\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"$PROJECT_DIR\"\n\n${PODS_ROOT}/Cuckoo/run generate --testable \"$PROJECT_NAME\" --output \"${OUTPUT_FILE}\" $($INPUT_DIR/GrowFriend/supportingFiles/CuckooFileListChecker.sh)\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84A7A7A402C93941EA460C3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrowFriend-GrowFriendUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F01E20A30A1F6CE76265E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrowFriend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B6DAB89BF24557EBEC294E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowFriend-GrowFriendUITests/Pods-GrowFriend-GrowFriendUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowFriend-GrowFriendUITests/Pods-GrowFriend-GrowFriendUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrowFriend-GrowFriendUITests/Pods-GrowFriend-GrowFriendUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6B4162EAF10A94A76B13E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowFriend/Pods-GrowFriend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowFriend/Pods-GrowFriend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrowFriend/Pods-GrowFriend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EEC15EF28A2E9AB00ADAB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EEC15FB28A2E9AB00ADAB3A /* ViewController.swift in Sources */,
+				4EFFD56928A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift in Sources */,
 				4EEC15F728A2E9AB00ADAB3A /* AppDelegate.swift in Sources */,
 				4EEC15F928A2E9AB00ADAB3A /* SceneDelegate.swift in Sources */,
+				4EFFD56428A2F00000EFFBF5 /* AppComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EEC160E28A2E9AC00ADAB3A /* GrowFriendTests.swift in Sources */,
+				4EFFD57628A2F38100EFFBF5 /* TestAppComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +560,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4EEC15FC28A2E9AB00ADAB3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EEC15FD28A2E9AB00ADAB3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4EEC160128A2E9AC00ADAB3A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +687,7 @@
 		};
 		4EEC161E28A2E9AC00ADAB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E6027D1EBF0E3BF76C28C1 /* Pods-GrowFriend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,7 +695,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C5A66RL5DQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GrowFriend/Info.plist;
+				INFOPLIST_FILE = GrowFriend/supportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,6 +716,7 @@
 		};
 		4EEC161F28A2E9AC00ADAB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD8FD4D0FF8518139722B95 /* Pods-GrowFriend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,7 +724,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C5A66RL5DQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GrowFriend/Info.plist;
+				INFOPLIST_FILE = GrowFriend/supportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -488,18 +745,26 @@
 		};
 		4EEC162128A2E9AC00ADAB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23209D1E02F0ED6B9E51A47 /* Pods-GrowFriendTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C5A66RL5DQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mathieu.GrowFriendTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrowFriend.app/GrowFriend";
@@ -508,14 +773,21 @@
 		};
 		4EEC162228A2E9AC00ADAB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7269456979D6686A1E19D704 /* Pods-GrowFriendTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C5A66RL5DQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mathieu.GrowFriendTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +800,7 @@
 		};
 		4EEC162428A2E9AC00ADAB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB5DEB437AE66B7E5BE7AD9 /* Pods-GrowFriend-GrowFriendUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +819,7 @@
 		};
 		4EEC162528A2E9AC00ADAB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F687C59FE75BE344C27D1A /* Pods-GrowFriend-GrowFriendUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
