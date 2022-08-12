@@ -23,7 +23,10 @@ class ContactsListController: UITableViewController {
     }
     
     private func setupTableView() {
+        dataSource.delegate = self
+
         tableView.dataSource = dataSource
+        tableView.prefetchDataSource = dataSource
         
         tableView.separatorStyle = .none
         tableView.registerReusableCell(ContactCardCell.self)
@@ -34,5 +37,11 @@ extension ContactsListController: ContactsListView {
     func onShowContacts(items: [UIContactItem]) {
         dataSource.updateData(newItems: items)
         tableView.reloadData()
+    }
+}
+
+extension ContactsListController: ContactsListDelegate {
+    func fetchNewContacts() {
+        presenter.getContactsList()
     }
 }

@@ -6,6 +6,7 @@ whotest[0]='test' || (echo 'Failure: arrays not supported in this version of bas
 testableFiles=(
     "ContactRepository.swift"
     "ContactServiceApi.swift"
+    "ContactsListDelegate.swift"
     "ContactsListPresenterImpl.swift"
     "GetContactsUseCase.swift"
     "NetworkMoyaProviders.swift"

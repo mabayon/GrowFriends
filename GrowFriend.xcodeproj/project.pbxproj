@@ -66,6 +66,7 @@
 		4EA2A7D128A3CEE800D4815E /* TestNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */; };
 		4EA2A7D728A3D57300D4815E /* TestRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7D628A3D57300D4815E /* TestRepositoryAssembly.swift */; };
 		4EA2A7DA28A3D61000D4815E /* TestUseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7D928A3D61000D4815E /* TestUseCaseAssembly.swift */; };
+		4EAB0C9F28A631A6001E5AB9 /* ContactsListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB0C9E28A631A6001E5AB9 /* ContactsListDelegate.swift */; };
 		4EBF106A28A3AD4D00A3E2A3 /* ContactPresenterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF106928A3AD4D00A3E2A3 /* ContactPresenterAssembly.swift */; };
 		4EBF106D28A3ADCC00A3E2A3 /* ContactUseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF106C28A3ADCC00A3E2A3 /* ContactUseCaseAssembly.swift */; };
 		4EBF107028A3AE0300A3E2A3 /* NetworkRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF106F28A3AE0300A3E2A3 /* NetworkRepositoryAssembly.swift */; };
@@ -160,6 +161,7 @@
 		4EA2A7D228A3D17800D4815E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		4EA2A7D628A3D57300D4815E /* TestRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepositoryAssembly.swift; sourceTree = "<group>"; };
 		4EA2A7D928A3D61000D4815E /* TestUseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUseCaseAssembly.swift; sourceTree = "<group>"; };
+		4EAB0C9E28A631A6001E5AB9 /* ContactsListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListDelegate.swift; sourceTree = "<group>"; };
 		4EBF106928A3AD4D00A3E2A3 /* ContactPresenterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenterAssembly.swift; sourceTree = "<group>"; };
 		4EBF106C28A3ADCC00A3E2A3 /* ContactUseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUseCaseAssembly.swift; sourceTree = "<group>"; };
 		4EBF106F28A3AE0300A3E2A3 /* NetworkRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryAssembly.swift; sourceTree = "<group>"; };
@@ -731,6 +733,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC2899C28A4FAC100B33A05 /* ContactsListDataSource.swift */,
+				4EAB0C9E28A631A6001E5AB9 /* ContactsListDelegate.swift */,
 			);
 			path = dataSource;
 			sourceTree = "<group>";
@@ -1144,6 +1147,7 @@
 				4E93F6EB28A38348006AA1BF /* ContactRouter.swift in Sources */,
 				4E93F6DD28A37F3F006AA1BF /* NameResponse.swift in Sources */,
 				4E9D80C528A39F200001D885 /* UINameItem.swift in Sources */,
+				4EAB0C9F28A631A6001E5AB9 /* ContactsListDelegate.swift in Sources */,
 				4E93F70028A38BAF006AA1BF /* DomainContactList.swift in Sources */,
 				4E93F6E828A38255006AA1BF /* Sessions.swift in Sources */,
 				4EC289A728A50A2400B33A05 /* DataSourceAssembly.swift in Sources */,
