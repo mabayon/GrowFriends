@@ -24,6 +24,10 @@ class ContactsListPresenterImpl: ContactsListPresenter, DisposeProvider {
     private weak var view: ContactsListView?
     let disposeBag = DisposeBag()
     
+    private var currentItems: [UIContactItem] = []
+
+    private var isFetchInProgress = false
+    
     init(getContacts: GetContactsUseCase, networkSchedulers: NetworkSchedulers) {
         self.getContacts = getContacts
         self.networkSchedulers = networkSchedulers
@@ -34,12 +38,19 @@ class ContactsListPresenterImpl: ContactsListPresenter, DisposeProvider {
     }
     
     func getContactsList() {
+        guard !isFetchInProgress else { return }
+
+        isFetchInProgress = true
+
         getContacts.invoke()
             .map { $0.toUIItem() }
             .subscribe(on: networkSchedulers.io)
             .observe(on: networkSchedulers.main)
             .subscribe(onSuccess: { [weak self] item in
-                self?.view?.onShowContacts(items: item.contacts)
+                guard let self = self else { return }
+                self.isFetchInProgress = false
+                self.currentItems.append(contentsOf: item.contacts)
+                self.view?.onShowContacts(items: self.currentItems)
             })
             .disposed(by: disposeBag)
     }

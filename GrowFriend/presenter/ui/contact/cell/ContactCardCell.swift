@@ -12,6 +12,13 @@ class ContactCardCell: UITableViewCell, Reusable {
     private var profileImageView = UIImageView()
     private var genderImageView = UIImageView()
 
+    private var indicatorView: UIActivityIndicatorView = {
+        let indicatorView = UIActivityIndicatorView()
+        indicatorView.style = .large
+        indicatorView.color = .black
+        return indicatorView
+    }()
+
     private var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -70,6 +77,12 @@ class ContactCardCell: UITableViewCell, Reusable {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func prepareForReuse() {
+      super.prepareForReuse()
+
+      onBind(item: .none)
+    }
 
     private func setupUI() {
         contentView.backgroundColor = UIColor(red: 243/255, green: 244/255, blue: 244/255, alpha: 1)
@@ -86,8 +99,15 @@ class ContactCardCell: UITableViewCell, Reusable {
             make.right.equalTo(contentView).offset(-8)
             make.bottom.equalTo(contentView).offset(-8)
         }
-        contentView.addSubview(profileImageView)
+
+        contentView.addSubview(indicatorView)
         
+        indicatorView.snp.makeConstraints { make in
+            make.centerWithinMargins.equalTo(contentView)
+        }
+
+        containerView.addSubview(profileImageView)
+
         profileImageView.snp.makeConstraints { make in
             make.top.equalTo(containerView).offset(24)
             make.left.equalTo(containerView).offset(16)
@@ -101,7 +121,7 @@ class ContactCardCell: UITableViewCell, Reusable {
         infosStackView.addArrangedSubview(nameStackView)
         infosStackView.addArrangedSubview(email)
         infosStackView.addArrangedSubview(phone)
-        contentView.addSubview(infosStackView)
+        containerView.addSubview(infosStackView)
         
         infosStackView.snp.makeConstraints { make in
             make.top.equalTo(contentView).offset(24)
@@ -109,7 +129,7 @@ class ContactCardCell: UITableViewCell, Reusable {
             make.bottom.equalTo(contentView).offset(-24)
         }
         
-        contentView.addSubview(genderImageView)
+        containerView.addSubview(genderImageView)
         
         genderImageView.snp.makeConstraints { make in
             make.top.equalTo(contentView).offset(24)
@@ -120,12 +140,19 @@ class ContactCardCell: UITableViewCell, Reusable {
         }
     }
     
-    func onBind(item: UIContactItem) {
-        profileImageView.loadImage(from: item.picture.large)
-        firstNameLabel.text = item.name.first
-        lastNameLabel.text = item.name.last.uppercased()
-        email.text = item.email
-        phone.text = item.phone
-        genderImageView.image = item.gender.getImage()
+    func onBind(item: UIContactItem?) {
+        if item == .none {
+            indicatorView.startAnimating()
+            containerView.subviews.forEach { $0.isHidden = true }
+        } else {
+            indicatorView.stopAnimating()
+            containerView.subviews.forEach { $0.isHidden = false }
+        }
+        profileImageView.loadImage(from: item?.picture.large)
+        firstNameLabel.text = item?.name.first
+        lastNameLabel.text = item?.name.last.uppercased()
+        email.text = item?.email
+        phone.text = item?.phone
+        genderImageView.image = item?.gender.getImage()
     }
 }

@@ -8,20 +8,39 @@
 import Foundation
 import UIKit
 
-class ContactsListDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
+class ContactsListDataSource: NSObject, UITableViewDataSource {
     private var currentsItems: [UIContactItem] = []
+
+    weak var delegate: ContactsListDelegate?
 
     func updateData(newItems: [UIContactItem]) {
         currentsItems = newItems
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        currentsItems.count
+        // +1 for the loading cell
+        currentsItems.count + 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(indexPath: indexPath) as ContactCardCell
-        cell.onBind(item: currentsItems[indexPath.row])
+        
+        isLoadingCell(for: indexPath)
+        ? cell.onBind(item: .none)
+        : cell.onBind(item: currentsItems[indexPath.row])
+
         return cell
+    }
+    
+    private func isLoadingCell(for indexPath: IndexPath) -> Bool {
+        indexPath.row == currentsItems.count
+    }
+}
+
+extension ContactsListDataSource: UITableViewDataSourcePrefetching {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        if indexPaths.contains(where: isLoadingCell) {
+            delegate?.fetchNewContacts()
+        }
     }
 }
