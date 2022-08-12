@@ -27,7 +27,7 @@ class ContactsListPresenterImplTests: XCTestCase {
         verifyNoMoreInteractions(mockGetContacts)
     }
     
-    func testGetContactsListWhenEmpty() {
+    func testGetContactsListWhenEmptyAndShouldNotReset() {
         let actualDomain = DomainFixtures.DomainContactListUtils.create()
         let expectedItems = PresenterFixtures.UIContactListItemUtils.create().contacts
 
@@ -35,13 +35,27 @@ class ContactsListPresenterImplTests: XCTestCase {
             when(stub).invoke(num: any()).thenReturn(Single.just(actualDomain))
         }
         
-        presenter.getContactsList()
+        presenter.getContactsList(shouldReset: false)
         
         verify(mockGetContacts).invoke(num: 10)
         verify(mockView).onShowContacts(items: equal(to: expectedItems))
     }
     
-    func testGetContactsListWhenAlreadyFillWithData() {
+    func testGetContactsListWhenEmptyAndShouldReset() {
+        let actualDomain = DomainFixtures.DomainContactListUtils.create()
+        let expectedItems = PresenterFixtures.UIContactListItemUtils.create().contacts
+
+        stub(mockGetContacts) { stub in
+            when(stub).invoke(num: any()).thenReturn(Single.just(actualDomain))
+        }
+        
+        presenter.getContactsList(shouldReset: true)
+        
+        verify(mockGetContacts).invoke(num: 10)
+        verify(mockView).onShowContacts(items: equal(to: expectedItems))
+    }
+    
+    func testGetContactsListWhenAlreadyFillWithDataAndShouldNotReset() {
         let oldData = PresenterFixtures.UIContactListItemUtils.create().contacts
         let newData = PresenterFixtures.UIContactListItemUtils.create().contacts
         
@@ -54,7 +68,23 @@ class ContactsListPresenterImplTests: XCTestCase {
             when(stub).invoke(num: any()).thenReturn(Single.just(actualDomain))
         }
         
-        presenter.getContactsList()
+        presenter.getContactsList(shouldReset: false)
+        
+        verify(mockGetContacts).invoke(num: 10)
+        verify(mockView).onShowContacts(items: equal(to: expectedItems))
+    }
+        
+    func testGetContactsListWhenAlreadyFillWithDataAndShouldReset() {
+        let actualDomain = DomainFixtures.DomainContactListUtils.create()
+        let expectedItems = PresenterFixtures.UIContactListItemUtils.create().contacts
+
+        helperFillTheListWithData()
+
+        stub(mockGetContacts) { stub in
+            when(stub).invoke(num: any()).thenReturn(Single.just(actualDomain))
+        }
+        
+        presenter.getContactsList(shouldReset: true)
         
         verify(mockGetContacts).invoke(num: 10)
         verify(mockView).onShowContacts(items: equal(to: expectedItems))
@@ -73,8 +103,8 @@ class ContactsListPresenterImplTests: XCTestCase {
             }
         }
         
-        presenter.getContactsList()
-        presenter.getContactsList()
+        presenter.getContactsList(shouldReset: false)
+        presenter.getContactsList(shouldReset: false)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) { [weak self] in
             guard let self = self else { return }
@@ -91,7 +121,7 @@ class ContactsListPresenterImplTests: XCTestCase {
             when(stub).invoke(num: any()).thenReturn(Single.just(DomainFixtures.DomainContactListUtils.create()))
         }
 
-        presenter.getContactsList()
+        presenter.getContactsList(shouldReset: false)
         clearInvocations(mockGetContacts)
         clearInvocations(mockView)
     }

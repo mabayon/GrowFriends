@@ -14,7 +14,7 @@ protocol ContactsListView: AnyObject {
 
 protocol ContactsListPresenter {
     func attach(_ view: ContactsListView)
-    func getContactsList()
+    func getContactsList(shouldReset: Bool)
 }
 
 class ContactsListPresenterImpl: ContactsListPresenter, DisposeProvider {
@@ -37,7 +37,7 @@ class ContactsListPresenterImpl: ContactsListPresenter, DisposeProvider {
         self.view = view
     }
     
-    func getContactsList() {
+    func getContactsList(shouldReset: Bool) {
         guard !isFetchInProgress else { return }
 
         isFetchInProgress = true
@@ -49,7 +49,9 @@ class ContactsListPresenterImpl: ContactsListPresenter, DisposeProvider {
             .subscribe(onSuccess: { [weak self] item in
                 guard let self = self else { return }
                 self.isFetchInProgress = false
-                self.currentItems.append(contentsOf: item.contacts)
+                shouldReset
+                ? self.currentItems = item.contacts
+                : self.currentItems.append(contentsOf: item.contacts)
                 self.view?.onShowContacts(items: self.currentItems)
             })
             .disposed(by: disposeBag)
