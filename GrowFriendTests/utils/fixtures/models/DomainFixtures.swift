@@ -37,6 +37,16 @@ class DomainFixtures {
         }
     }
     
+    class DomainErrorUtils {
+        static func createNetworkException() -> DomainNetworkException {
+            DomainNetworkException(code: FixturesConstants.errorCode, errorMessage: FixturesConstants.errorMessage)
+        }
+        
+        static func createAPIDecodeException() -> DomainAPIDecodeException {
+            DomainAPIDecodeException(errorMessage: FixturesConstants.errorMessage)
+        }
+    }
+    
     class DomainNameUtils {
         static func createFemale() -> DomainName {
             DomainName(first: FixturesConstants.ContactFemale.firstName,

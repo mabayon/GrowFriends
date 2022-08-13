@@ -61,6 +61,13 @@
 		4E9D80C628A39F200001D885 /* UIContactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D80C028A39EAF0001D885 /* UIContactItem.swift */; };
 		4E9D80C728A39F200001D885 /* UIPictureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D80C128A39EAF0001D885 /* UIPictureItem.swift */; };
 		4E9D80CA28A3A09F0001D885 /* ContactsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D80C928A3A09F0001D885 /* ContactsListController.swift */; };
+		4EA0DCD328A7A7010063BF5A /* ErrorResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCD228A7A7010063BF5A /* ErrorResponseTests.swift */; };
+		4EA0DCDA28A7AF2A0063BF5A /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCD928A7AF2A0063BF5A /* DataError.swift */; };
+		4EA0DCDC28A7B1B00063BF5A /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCDB28A7B1B00063BF5A /* DomainError.swift */; };
+		4EA0DCDF28A7B7150063BF5A /* RxErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCDE28A7B7150063BF5A /* RxErrorExtension.swift */; };
+		4EA0DCE228A7D0500063BF5A /* DomainErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCE128A7D0500063BF5A /* DomainErrorTests.swift */; };
+		4EA0DCE528A7D1240063BF5A /* UIErrorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCE428A7D1240063BF5A /* UIErrorItem.swift */; };
+		4EA0DCE728A7D3570063BF5A /* ErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCE628A7D3570063BF5A /* ErrorProtocol.swift */; };
 		4EA2A7CC28A3CE3700D4815E /* TestAppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7CB28A3CE3700D4815E /* TestAppAssembly.swift */; };
 		4EA2A7CE28A3CE8D00D4815E /* TestNetworkSchedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7CD28A3CE8D00D4815E /* TestNetworkSchedulers.swift */; };
 		4EA2A7D128A3CEE800D4815E /* TestNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */; };
@@ -155,6 +162,13 @@
 		4E9D80C228A39EAF0001D885 /* UIContactListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIContactListItem.swift; sourceTree = "<group>"; };
 		4E9D80C328A39EAF0001D885 /* UINameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINameItem.swift; sourceTree = "<group>"; };
 		4E9D80C928A3A09F0001D885 /* ContactsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListController.swift; sourceTree = "<group>"; };
+		4EA0DCD228A7A7010063BF5A /* ErrorResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseTests.swift; sourceTree = "<group>"; };
+		4EA0DCD928A7AF2A0063BF5A /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		4EA0DCDB28A7B1B00063BF5A /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		4EA0DCDE28A7B7150063BF5A /* RxErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxErrorExtension.swift; sourceTree = "<group>"; };
+		4EA0DCE128A7D0500063BF5A /* DomainErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainErrorTests.swift; sourceTree = "<group>"; };
+		4EA0DCE428A7D1240063BF5A /* UIErrorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIErrorItem.swift; sourceTree = "<group>"; };
+		4EA0DCE628A7D3570063BF5A /* ErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProtocol.swift; sourceTree = "<group>"; };
 		4EA2A7CB28A3CE3700D4815E /* TestAppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppAssembly.swift; sourceTree = "<group>"; };
 		4EA2A7CD28A3CE8D00D4815E /* TestNetworkSchedulers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkSchedulers.swift; sourceTree = "<group>"; };
 		4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkAssembly.swift; sourceTree = "<group>"; };
@@ -239,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				4E2F50AA28A41585005226E6 /* models */,
-				4E2F50B428A41726005226E6 /* repositories */,
+				4E2F50B428A41726005226E6 /* repository */,
 				4E8DFA9428A4DD55002DFC21 /* router */,
 				4E8DFA8928A4D5A0002DFC21 /* vendors */,
 			);
@@ -249,6 +263,7 @@
 		4E2F50AA28A41585005226E6 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCD128A7A6EA0063BF5A /* error */,
 				4E2F50AB28A41587005226E6 /* contact */,
 			);
 			path = models;
@@ -265,12 +280,12 @@
 			path = contact;
 			sourceTree = "<group>";
 		};
-		4E2F50B428A41726005226E6 /* repositories */ = {
+		4E2F50B428A41726005226E6 /* repository */ = {
 			isa = PBXGroup;
 			children = (
 				4E2F50B728A4178D005226E6 /* network */,
 			);
-			path = repositories;
+			path = repository;
 			sourceTree = "<group>";
 		};
 		4E2F50B728A4178D005226E6 /* network */ = {
@@ -351,6 +366,7 @@
 		4E8DFA9828A4DE0C002DFC21 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCE028A7D0360063BF5A /* error */,
 				4E8DFA9928A4DE0F002DFC21 /* contact */,
 			);
 			path = models;
@@ -396,7 +412,8 @@
 			isa = PBXGroup;
 			children = (
 				4E93F6D428A3795F006AA1BF /* models */,
-				4E93F6EF28A38A37006AA1BF /* repositories */,
+				4E93F6EF28A38A37006AA1BF /* repository */,
+				4EA0DCDD28A7B70D0063BF5A /* utils */,
 				4E93F6CD28A377C4006AA1BF /* vendors */,
 			);
 			path = data;
@@ -440,6 +457,7 @@
 		4E93F6D428A3795F006AA1BF /* models */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCD028A7A6E20063BF5A /* error */,
 				4E93F6D628A37975006AA1BF /* contact */,
 			);
 			path = models;
@@ -490,12 +508,12 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
-		4E93F6EF28A38A37006AA1BF /* repositories */ = {
+		4E93F6EF28A38A37006AA1BF /* repository */ = {
 			isa = PBXGroup;
 			children = (
 				4E93F6F028A38A3F006AA1BF /* network */,
 			);
-			path = repositories;
+			path = repository;
 			sourceTree = "<group>";
 		};
 		4E93F6F028A38A3F006AA1BF /* network */ = {
@@ -535,6 +553,7 @@
 		4E93F6F828A38B2F006AA1BF /* models */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCD628A7A8080063BF5A /* error */,
 				4E93F6FA28A38B3B006AA1BF /* contact */,
 			);
 			path = models;
@@ -612,6 +631,7 @@
 			children = (
 				4E93F71128A3932F006AA1BF /* DisposeProvider.swift */,
 				4EC289A128A5060C00B33A05 /* Reusable.swift */,
+				4EA0DCE628A7D3570063BF5A /* ErrorProtocol.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -619,6 +639,7 @@
 		4E9D80BE28A39E250001D885 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCE328A7D1180063BF5A /* error */,
 				4E9D80BF28A39E9C0001D885 /* contact */,
 			);
 			path = models;
@@ -645,6 +666,54 @@
 				4E9D80C928A3A09F0001D885 /* ContactsListController.swift */,
 			);
 			path = contact;
+			sourceTree = "<group>";
+		};
+		4EA0DCD028A7A6E20063BF5A /* error */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCD928A7AF2A0063BF5A /* DataError.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		4EA0DCD128A7A6EA0063BF5A /* error */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCD228A7A7010063BF5A /* ErrorResponseTests.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		4EA0DCD628A7A8080063BF5A /* error */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCDB28A7B1B00063BF5A /* DomainError.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		4EA0DCDD28A7B70D0063BF5A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCDE28A7B7150063BF5A /* RxErrorExtension.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		4EA0DCE028A7D0360063BF5A /* error */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCE128A7D0500063BF5A /* DomainErrorTests.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		4EA0DCE328A7D1180063BF5A /* error */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCE428A7D1240063BF5A /* UIErrorItem.swift */,
+			);
+			path = error;
 			sourceTree = "<group>";
 		};
 		4EA2A7CA28A3CE2100D4815E /* app */ = {
@@ -1122,6 +1191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA0DCDA28A7AF2A0063BF5A /* DataError.swift in Sources */,
 				4EFFD56928A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift in Sources */,
 				4E93F70628A38ED1006AA1BF /* GetContactsUseCase.swift in Sources */,
 				4E93F70E28A3923B006AA1BF /* NetworkSchedulers.swift in Sources */,
@@ -1129,6 +1199,7 @@
 				4E93F6EE28A383EE006AA1BF /* Routable.swift in Sources */,
 				4E93F6D828A3798B006AA1BF /* ContactResponse.swift in Sources */,
 				4EC289A028A5018100B33A05 /* ContactCardCell.swift in Sources */,
+				4EA0DCDF28A7B7150063BF5A /* RxErrorExtension.swift in Sources */,
 				4E9D80C628A39F200001D885 /* UIContactItem.swift in Sources */,
 				4E9D80CA28A3A09F0001D885 /* ContactsListController.swift in Sources */,
 				4E93F6FF28A38BAF006AA1BF /* DomainContact.swift in Sources */,
@@ -1147,6 +1218,7 @@
 				4E93F6EB28A38348006AA1BF /* ContactRouter.swift in Sources */,
 				4E93F6DD28A37F3F006AA1BF /* NameResponse.swift in Sources */,
 				4E9D80C528A39F200001D885 /* UINameItem.swift in Sources */,
+				4EA0DCE528A7D1240063BF5A /* UIErrorItem.swift in Sources */,
 				4EAB0C9F28A631A6001E5AB9 /* ContactsListDelegate.swift in Sources */,
 				4E93F70028A38BAF006AA1BF /* DomainContactList.swift in Sources */,
 				4E93F6E828A38255006AA1BF /* Sessions.swift in Sources */,
@@ -1169,6 +1241,8 @@
 				4EC2899528A4F26A00B33A05 /* UIGenderItem.swift in Sources */,
 				4E93F70128A38BAF006AA1BF /* DomainName.swift in Sources */,
 				4E93F70A28A390C1006AA1BF /* ContactsListPresenterImpl.swift in Sources */,
+				4EA0DCE728A7D3570063BF5A /* ErrorProtocol.swift in Sources */,
+				4EA0DCDC28A7B1B00063BF5A /* DomainError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1191,6 +1265,7 @@
 				4EA2A7D728A3D57300D4815E /* TestRepositoryAssembly.swift in Sources */,
 				4E8DFAA128A4DF3D002DFC21 /* DomainPictureTests.swift in Sources */,
 				4E8DFA9628A4DD6F002DFC21 /* ContactRouterTests.swift in Sources */,
+				4EA0DCE228A7D0500063BF5A /* DomainErrorTests.swift in Sources */,
 				4E8DFA9D28A4DEE3002DFC21 /* DomainContactTests.swift in Sources */,
 				4EA2A7CE28A3CE8D00D4815E /* TestNetworkSchedulers.swift in Sources */,
 				4E2F50B628A4175B005226E6 /* ContactRepositoryImplTests.swift in Sources */,
@@ -1203,6 +1278,7 @@
 				4E2F50AF28A415FC005226E6 /* PictureResponseTests.swift in Sources */,
 				4E8DFAA728A4E227002DFC21 /* GetContactsUseCaseTests.swift in Sources */,
 				4E8DFA9B28A4DE58002DFC21 /* DomainContactListTests.swift in Sources */,
+				4EA0DCD328A7A7010063BF5A /* ErrorResponseTests.swift in Sources */,
 				4EC2899A28A4F9E100B33A05 /* ContactsListDataSourceTests.swift in Sources */,
 				4EA2A7CC28A3CE3700D4815E /* TestAppAssembly.swift in Sources */,
 				4E8DFA8F28A4D747002DFC21 /* ContactServiceApiTests.swift in Sources */,

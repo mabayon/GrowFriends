@@ -36,7 +36,7 @@ class ContactsListController: UITableViewController {
         refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
     }
     
-    @objc func refresh(_ sender: AnyObject) {
+    @objc func refresh(_ sender: UIRefreshControl) {
         presenter.getContactsList(shouldReset: true)
     }
 }
@@ -46,6 +46,18 @@ extension ContactsListController: ContactsListView {
         dataSource.updateData(newItems: items)
         refreshControl?.endRefreshing()
         tableView.reloadData()
+    }
+    
+    func onStopLoading() {
+        refreshControl?.endRefreshing()
+    }
+    
+    func onReceiveNetworkError(_ error: UIErrorItem) {
+        let alertController = UIAlertController(title: "Warning",
+                                                message: "Check your connection 😥", preferredStyle: .alert)
+        let confirmAction = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(confirmAction)
+        present(alertController, animated: true)
     }
 }
 

@@ -8,8 +8,9 @@
 import Foundation
 import RxSwift
 
-protocol ContactsListView: AnyObject {
+protocol ContactsListView: ErrorProtocol {
     func onShowContacts(items: [UIContactItem])
+    func onStopLoading()
 }
 
 protocol ContactsListPresenter {
@@ -53,6 +54,10 @@ class ContactsListPresenterImpl: ContactsListPresenter, DisposeProvider {
                 ? self.currentItems = item.contacts
                 : self.currentItems.append(contentsOf: item.contacts)
                 self.view?.onShowContacts(items: self.currentItems)
+            }, onFailure: { [weak self] error in
+                self?.view?.onReceiveError(error)
+                self?.view?.onStopLoading()
+                self?.isFetchInProgress = false
             })
             .disposed(by: disposeBag)
     }

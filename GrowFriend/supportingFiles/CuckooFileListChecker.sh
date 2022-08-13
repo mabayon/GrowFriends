@@ -8,6 +8,7 @@ testableFiles=(
     "ContactServiceApi.swift"
     "ContactsListDelegate.swift"
     "ContactsListPresenterImpl.swift"
+    "ErrorProtocol.swift"
     "GetContactsUseCase.swift"
     "NetworkMoyaProviders.swift"
     "Sessions.swift"

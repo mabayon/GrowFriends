@@ -8,6 +8,9 @@
 import Foundation
 
 class FixturesConstants {
+    static let errorCode = 500
+    static let errorMessage = "Something went wrong"
+
     class ContactFemale {
         static let firstName = "Kayla"
         static let lastName = "Jennings"

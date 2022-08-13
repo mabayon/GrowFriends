@@ -27,7 +27,7 @@ class ContactRepositoryImplTests: XCTestCase {
         verifyNoMoreInteractions(mockContactServiceApi)
     }
     
-    func testGetContacts() {
+    func testGetContactsSuccess() {
         let expectedDomain = DomainFixtures.DomainContactListUtils.create()
         let actualResponse = DataFixtures.ContactListResponseUtils.create()
         
@@ -38,6 +38,21 @@ class ContactRepositoryImplTests: XCTestCase {
         repository.getContacts(num: 1)
             .test()
             .assertValue(value: expectedDomain)
+        
+        verify(mockContactServiceApi).getContacts(num: 1)
+    }
+    
+    func testGetContactsFailure() {
+        let expectedDomainError = DomainFixtures.DomainErrorUtils.createNetworkException()
+        let actualDataExeption = DataFixtures.DataErrorUtils.createNetworkException()
+        
+        stub(mockContactServiceApi) { stub in
+            when(stub).getContacts(num: any()).thenReturn(Single.error(actualDataExeption))
+        }
+        
+        repository.getContacts(num: 1)
+            .test()
+            .assertError(error: expectedDomainError)
         
         verify(mockContactServiceApi).getContacts(num: 1)
     }

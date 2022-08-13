@@ -18,5 +18,6 @@ class ContactRepositoryImpl: ContactRepository {
     func getContacts(num: Int) -> Single<DomainContactList> {
         contactServiceApi.getContacts(num: num)
             .map { $0.toDomain() }
+            .throwDomainExceptionOnError()
     }
 }
