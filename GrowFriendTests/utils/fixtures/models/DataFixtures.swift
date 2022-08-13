@@ -36,7 +36,17 @@ class DataFixtures {
                           picture: PictureResponseUtils.createMale())
         }
     }
-    
+
+    class DataErrorUtils {
+        static func createNetworkException() -> DataNetworkException {
+            DataNetworkException(code: FixturesConstants.errorCode, errorMessage: FixturesConstants.errorMessage)
+        }
+        
+        static func createAPIDecodeException() -> DataAPIDecodeException {
+            DataAPIDecodeException(errorMessage: FixturesConstants.errorMessage)
+        }
+    }
+
     class NameResponseUtils {
         static func createFemale() -> NameResponse {
             NameResponse(first: FixturesConstants.ContactFemale.firstName,

@@ -41,7 +41,7 @@ extension MoyaProviderType {
                         }
                     case let .failure(error):
                     print(error.localizedDescription)
-                    single(.failure(error))
+                    single(.failure(DataNetworkException(code: error.errorCode, errorMessage: error.localizedDescription)))
                 }
             }
             return Disposables.create { request?.cancel() }

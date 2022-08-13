@@ -15,6 +15,8 @@ class ContactsListPresenterImplTests: XCTestCase {
     override func setUp() {
         stub(mockView) { stub in
             when(stub).onShowContacts(items: any()).thenDoNothing()
+            when(stub).onStopLoading().thenDoNothing()
+            when(stub).onReceiveError(any()).thenDoNothing()
         }
 
         presenter = ContactsListPresenterImpl(getContacts: mockGetContacts,
@@ -114,6 +116,22 @@ class ContactsListPresenterImplTests: XCTestCase {
         }
         
         wait(for: [exp], timeout: 1)
+    }
+    
+    func testGetContactsListFailure() {
+        let actualDomainException = DomainFixtures.DomainErrorUtils.createNetworkException()
+
+        stub(mockGetContacts) { stub in
+            when(stub).invoke(num: any()).thenReturn(Single.error(actualDomainException))
+        }
+        
+        presenter.getContactsList(shouldReset: true)
+        
+        verify(mockGetContacts).invoke(num: 10)
+        verify(mockView).onStopLoading()
+        verify(mockView).onReceiveError(ParameterMatcher(matchesFunction: { error in
+            error as! DomainNetworkException == actualDomainException
+        }))
     }
     
     private func helperFillTheListWithData() {

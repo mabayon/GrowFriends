@@ -78,12 +78,6 @@ class ContactCardCell: UITableViewCell, Reusable {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func prepareForReuse() {
-      super.prepareForReuse()
-
-      onBind(item: .none)
-    }
-
     private func setupUI() {
         contentView.backgroundColor = UIColor(red: 243/255, green: 244/255, blue: 244/255, alpha: 1)
         containerView.applyShadow()

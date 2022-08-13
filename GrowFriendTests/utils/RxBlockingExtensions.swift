@@ -30,4 +30,13 @@ extension BlockingObservable where Element: Equatable {
                 XCTFail("Expected \(value) but threw error : \(unwrappedError)")
         }
     }
+    
+    func assertError<T: Equatable>(error: T) {
+        switch materialize() {
+            case let .completed(elements):
+                XCTFail("Expected an error but found value instead : \(elements)")
+            case let .failed(_, unwrappedError):
+                XCTAssertEqual(error, unwrappedError as! T)
+        }
+    }
 }

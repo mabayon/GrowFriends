@@ -37,6 +37,12 @@ class PresenterFixtures {
         }
     }
     
+    class UIErrorItemUtils {
+        static func create() -> UIErrorItem {
+            UIErrorItem(errorMessage: FixturesConstants.errorMessage)
+        }
+    }
+    
     class UINameItemUtils {
         static func createFemale() -> UINameItem {
             UINameItem(first: FixturesConstants.ContactFemale.firstName,
