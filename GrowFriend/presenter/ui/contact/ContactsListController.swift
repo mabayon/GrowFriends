@@ -8,7 +8,6 @@
 import UIKit
 
 class ContactsListController: UITableViewController {
-
     @Inject private var presenter: ContactsListPresenter
     @Inject private var dataSource: ContactsListDataSource
 
@@ -19,7 +18,7 @@ class ContactsListController: UITableViewController {
         setupTableView()
 
         presenter.attach(self)
-        presenter.getContactsList()
+        presenter.getContactsList(shouldReset: true)
     }
     
     private func setupTableView() {
@@ -30,18 +29,28 @@ class ContactsListController: UITableViewController {
         
         tableView.separatorStyle = .none
         tableView.registerReusableCell(ContactCardCell.self)
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: [.foregroundColor: UIColor.black])
+        refreshControl?.tintColor = .black
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        presenter.getContactsList(shouldReset: true)
     }
 }
 
 extension ContactsListController: ContactsListView {
     func onShowContacts(items: [UIContactItem]) {
         dataSource.updateData(newItems: items)
+        refreshControl?.endRefreshing()
         tableView.reloadData()
     }
 }
 
 extension ContactsListController: ContactsListDelegate {
     func fetchNewContacts() {
-        presenter.getContactsList()
+        presenter.getContactsList(shouldReset: false)
     }
 }
