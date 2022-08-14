@@ -13,6 +13,7 @@ struct DomainContact: Equatable, Codable {
     let email: String
     let phone: String
     let picture: DomainPicture
+    let location: DomainLocation
 }
 
 extension DomainContact {
@@ -21,6 +22,7 @@ extension DomainContact {
                       name: name.toUIItem(),
                       email: email,
                       phone: phone,
-                      picture: picture.toUIItem())
+                      picture: picture.toUIItem(),
+                      location: location.toUIItem())
     }
 }

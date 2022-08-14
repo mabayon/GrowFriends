@@ -25,7 +25,8 @@ class PresenterFixtures {
                           name: UINameItemUtils.createFemale(),
                           email: FixturesConstants.ContactFemale.email,
                           phone: FixturesConstants.ContactFemale.phone,
-                          picture: UIPictureItemUtils.createFemale())
+                          picture: UIPictureItemUtils.createFemale(),
+                          location: UILocationItemUtils.createFemale())
         }
         
         static func createMale() -> UIContactItem {
@@ -33,9 +34,21 @@ class PresenterFixtures {
                           name: UINameItemUtils.createMale(),
                           email: FixturesConstants.ContactMale.email,
                           phone: FixturesConstants.ContactMale.phone,
-                          picture: UIPictureItemUtils.createMale())
+                          picture: UIPictureItemUtils.createMale(),
+                          location: UILocationItemUtils.createMale())
         }
     }
+    
+    class UICoordinatesItemUtils {
+        static func createFemale() -> UICoordinatesItem {
+            UICoordinatesItem(latitude: "\(FixturesConstants.ContactFemale.latitude)", longitude: "\(FixturesConstants.ContactFemale.longitude)")
+        }
+        
+        static func createMale() -> UICoordinatesItem {
+            UICoordinatesItem(latitude: "\(FixturesConstants.ContactMale.latitude)", longitude: "\(FixturesConstants.ContactMale.longitude)")
+        }
+    }
+ 
     
     class UIErrorItemUtils {
         static func create() -> UIErrorItem {
@@ -43,6 +56,23 @@ class PresenterFixtures {
         }
     }
     
+    class UILocationItemUtils {
+        static func createFemale() -> UILocationItem {
+            UILocationItem(street: UIStreetItemUtils.createFemale(),
+                             city: FixturesConstants.ContactFemale.city,
+                             country: FixturesConstants.ContactMale.country,
+                             coordinates: UICoordinatesItemUtils.createFemale())
+        }
+        
+        static func createMale() -> UILocationItem {
+            UILocationItem(street: UIStreetItemUtils.createMale(),
+                             city: FixturesConstants.ContactMale.city,
+                             country: FixturesConstants.ContactMale.country,
+                             coordinates: UICoordinatesItemUtils.createMale())
+        }
+    }
+    
+
     class UINameItemUtils {
         static func createFemale() -> UINameItem {
             UINameItem(first: FixturesConstants.ContactFemale.firstName,
@@ -66,6 +96,16 @@ class PresenterFixtures {
             UIPictureItem(large: FixturesConstants.ContactMale.large,
                           medium: FixturesConstants.ContactMale.medium,
                           thumbnail: FixturesConstants.ContactMale.thumbnail)
+        }
+    }
+    
+    class UIStreetItemUtils {
+        static func createFemale() -> UIStreetItem {
+            UIStreetItem(number: FixturesConstants.ContactFemale.streetNumber, name: FixturesConstants.ContactFemale.streetName)
+        }
+        
+        static func createMale() -> UIStreetItem {
+            UIStreetItem(number: FixturesConstants.ContactMale.streetNumber, name: FixturesConstants.ContactMale.streetName)
         }
     }
 }

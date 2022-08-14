@@ -42,6 +42,20 @@ class ContactsListDataSourceTests: XCTestCase {
         XCTAssertTrue(dataSource.tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0)) is ContactCardCell)
     }
     
+    
+    func testDidSelectRowAt() {
+        stub(mockContactsListDelegate) { stub in
+            when(stub).didSelectItem(item: any()).thenDoNothing()
+        }
+
+        dataSource.delegate = mockContactsListDelegate
+        dataSource.tableView(tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
+        verify(mockContactsListDelegate).didSelectItem(item: ParameterMatcher(matchesFunction: { selectedRow in
+            selectedRow == self.expectedItems[0]
+        }))
+        verifyNoMoreInteractions(mockContactsListDelegate)
+    }
+    
     func testPrefetchRowsAtWhenRowIsLoadingCell() {
         stub(mockContactsListDelegate) { stub in
             when(stub).fetchNewContacts().thenDoNothing()

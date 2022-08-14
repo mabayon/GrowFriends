@@ -13,6 +13,7 @@ struct ContactResponse: Decodable, Equatable {
     let email: String
     let phone: String
     let picture: PictureResponse
+    let location: LocationResponse
 }
 
 extension ContactResponse {
@@ -21,6 +22,7 @@ extension ContactResponse {
                       name: name.toDomain(),
                       email: email,
                       phone: phone,
-                      picture: picture.toDomain())
+                      picture: picture.toDomain(),
+                      location: location.toDomain())
     }
 }

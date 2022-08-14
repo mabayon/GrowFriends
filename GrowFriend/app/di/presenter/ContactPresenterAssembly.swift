@@ -16,5 +16,9 @@ class ContactPresenterAssembly: Assembly {
                                       setLastContactsList: resolver.resolve(SetLastContactsListUseCase.self)!,
                                       networkSchedulers: resolver.resolve(NetworkSchedulers.self)!)
         }
+        
+        container.register(ContactDetailsPresenter.self) { _ in
+            ContactDetailsPresenterImpl()
+        }
     }
 }

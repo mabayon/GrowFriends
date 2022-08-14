@@ -20,8 +20,14 @@ class FixturesConstants {
         static let large = "https://randomuser.me/api/portraits/women/81.jpg"
         static let medium = "https://randomuser.me/api/portraits/med/women/81.jpg"
         static let thumbnail = "https://randomuser.me/api/portraits/thumb/women/81.jpg"
+        static let streetNumber = 43
+        static let streetName = "Fairview Road"
+        static let city = "Sunderland"
+        static let country = "United Kingdom"
+        static let latitude = "28.5915"
+        static let longitude = "37.4769"
     }
-    
+
     class ContactMale {
         static let firstName = "Édipo"
         static let lastName = "Caldeira"
@@ -31,5 +37,11 @@ class FixturesConstants {
         static let large = "https://randomuser.me/api/portraits/men/7.jpg"
         static let medium = "https://randomuser.me/api/portraits/med/men/7.jpg"
         static let thumbnail = "https://randomuser.me/api/portraits/thumb/men/7.jpg"
+        static let streetNumber = 1547
+        static let streetName = "Stanley Way"
+        static let city = "Aylmer"
+        static let country = "Canada"
+        static let latitude = -57.6511
+        static let longitude = 14.9676
     }
 }

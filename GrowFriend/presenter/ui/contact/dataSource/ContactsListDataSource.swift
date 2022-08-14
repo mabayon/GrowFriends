@@ -24,7 +24,7 @@ class ContactsListDataSource: NSObject, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(indexPath: indexPath) as ContactCardCell
-        
+
         if isLoadingCell(for: indexPath) || currentsItems.isEmpty {
             cell.onBind(item: .none)
         } else {
@@ -36,6 +36,12 @@ class ContactsListDataSource: NSObject, UITableViewDataSource {
     
     private func isLoadingCell(for indexPath: IndexPath) -> Bool {
         indexPath.row == currentsItems.count
+    }
+}
+
+extension ContactsListDataSource: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelectItem(item: currentsItems[indexPath.row])
     }
 }
 

@@ -12,11 +12,25 @@ class ContactsListController: UITableViewController {
     @Inject private var presenter: ContactsListPresenter
     @Inject private var dataSource: ContactsListDataSource
 
-    static private var backgroundColor = UIColor(red: 243/255, green: 244/255, blue: 244/255, alpha: 1)
+    private var errorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .red
+        view.isHidden = true
+        return view
+    }()
+    
+    private let errorLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.text = "Check your connection 😥"
+        return label
+    }()
 
     private var infoView: UIView = {
         let view = UIView()
-        view.backgroundColor = backgroundColor
+        view.backgroundColor = UIColor(red: 243/255, green: 244/255, blue: 244/255, alpha: 1)
         view.isHidden = true
         return view
     }()
@@ -69,7 +83,12 @@ class ContactsListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = ContactsListController.backgroundColor
+        title = "Contacts List"
+        navigationController?.navigationBar.backgroundColor = .darkGray
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+
+        view.backgroundColor = .darkGray
         tryAgainButton.addTarget(self, action: #selector(refresh), for: .touchUpInside)
 
         setupTableView()
@@ -90,8 +109,9 @@ class ContactsListController: UITableViewController {
 
         infoView.snp.makeConstraints { make in
             make.height.equalTo(view)
-            make.width.equalTo(view)
-            make.centerWithinMargins.equalTo(view)
+            make.centerX.equalTo(view)
+            make.top.equalTo(view)
+            make.left.equalTo(view)
         }
 
         infoImageView.snp.makeConstraints { make in
@@ -104,20 +124,38 @@ class ContactsListController: UITableViewController {
             make.centerY.equalTo(view.safeAreaLayoutGuide)
             make.left.equalTo(infoView).offset(24)
         }
+        
+        view.addSubview(errorView)
+
+        errorView.snp.makeConstraints { make in
+            make.centerX.equalTo(view.safeAreaLayoutGuide)
+            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.left.equalTo(view.safeAreaLayoutGuide)
+        }
+        
+        errorView.addSubview(errorLabel)
+        
+        errorLabel.snp.makeConstraints { make in
+            make.top.equalTo(errorView)
+            make.left.equalTo(errorView)
+            make.right.equalTo(errorView)
+            make.bottom.equalTo(errorView)
+        }
     }
     
     private func setupTableView() {
         dataSource.delegate = self
 
         tableView.dataSource = dataSource
+        tableView.delegate = dataSource
         tableView.prefetchDataSource = dataSource
         
         tableView.separatorStyle = .none
         tableView.registerReusableCell(ContactCardCell.self)
         
         refreshControl = UIRefreshControl()
-        refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: [.foregroundColor: UIColor.black])
-        refreshControl?.tintColor = .black
+        refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: [.foregroundColor: UIColor.white])
+        refreshControl?.tintColor = .white
         refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
     }
     
@@ -131,31 +169,48 @@ extension ContactsListController: ContactsListView {
         dataSource.updateData(newItems: items)
         refreshControl?.endRefreshing()
         tableView.reloadData()
+        
+        if !errorView.isHidden {
+            errorView.isHidden = true
+        }
     }
     
     func onShowEmptyList() {
-        infoView.isHidden = false
+        if infoView.isHidden {
+            infoView.isHidden = false
+            tableView.isScrollEnabled = false
+            errorView.isHidden = true
+        }
     }
     
     func onStartLoading() {
-        infoView.isHidden = true
+        if !infoView.isHidden {
+            infoView.isHidden = true
+            tableView.isScrollEnabled = true
+        }
     }
 
     func onStopLoading() {
-        refreshControl?.endRefreshing()
+        if refreshControl?.isRefreshing ?? false {
+            refreshControl?.endRefreshing()
+        }
     }
     
     func onReceiveNetworkError(_ error: UIErrorItem) {
-        let alertController = UIAlertController(title: "Warning",
-                                                message: "Check your connection 😥", preferredStyle: .alert)
-        let confirmAction = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(confirmAction)
-        present(alertController, animated: true)
+        if errorView.isHidden {
+            errorView.isHidden = false
+        }
     }
 }
 
 extension ContactsListController: ContactsListDelegate {
     func fetchNewContacts() {
         presenter.getContactsList(shouldReset: false)
+    }
+    
+    func didSelectItem(item: UIContactItem) {
+        let vc = ContactDetailsController()
+        vc.item = item
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

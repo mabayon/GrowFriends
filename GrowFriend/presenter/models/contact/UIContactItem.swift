@@ -13,6 +13,7 @@ struct UIContactItem: Equatable {
     let email: String
     let phone: String
     let picture: UIPictureItem
+    let location: UILocationItem
 }
 
 extension UIContactItem {
@@ -21,6 +22,7 @@ extension UIContactItem {
                       name: name.toDomain(),
                       email: email,
                       phone: phone,
-                      picture: picture.toDomain())
+                      picture: picture.toDomain(),
+                      location: location.toDomain())
     }
 }
