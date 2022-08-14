@@ -14,3 +14,13 @@ struct UIContactItem: Equatable {
     let phone: String
     let picture: UIPictureItem
 }
+
+extension UIContactItem {
+    func toDomain() -> DomainContact {
+        DomainContact(gender: gender.toDomain(),
+                      name: name.toDomain(),
+                      email: email,
+                      phone: phone,
+                      picture: picture.toDomain())
+    }
+}

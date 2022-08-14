@@ -8,11 +8,12 @@
 import Foundation
 import Swinject
 
-// swiftlint:disable force_unwrapping
 class ContactPresenterAssembly: Assembly {
     func assemble(container: Container) {
         container.register(ContactsListPresenter.self) { resolver in
             ContactsListPresenterImpl(getContacts: resolver.resolve(GetContactsUseCase.self)!,
+                                      getLastContactsList: resolver.resolve(GetLastContactsListUseCase.self)!,
+                                      setLastContactsList: resolver.resolve(SetLastContactsListUseCase.self)!,
                                       networkSchedulers: resolver.resolve(NetworkSchedulers.self)!)
         }
     }

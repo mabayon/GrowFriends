@@ -19,15 +19,17 @@ class ContactsListDataSource: NSObject, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // +1 for the loading cell
-        currentsItems.count + 1
+        currentsItems.isEmpty ? 10 : currentsItems.count + 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(indexPath: indexPath) as ContactCardCell
         
-        isLoadingCell(for: indexPath)
-        ? cell.onBind(item: .none)
-        : cell.onBind(item: currentsItems[indexPath.row])
+        if isLoadingCell(for: indexPath) || currentsItems.isEmpty {
+            cell.onBind(item: .none)
+        } else {
+            cell.onBind(item: currentsItems[indexPath.row])
+        }
 
         return cell
     }

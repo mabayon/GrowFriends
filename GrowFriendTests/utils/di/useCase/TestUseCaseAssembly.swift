@@ -16,5 +16,13 @@ class TestUseCaseAssembly: Assembly {
         container.register(MockGetContactsUseCase.self) { resolver in
             MockGetContactsUseCase(contactRepository: resolver.resolve(MockContactRepository.self)!)
         }
+        
+        container.register(MockGetLastContactsListUseCase.self) { resolver in
+            MockGetLastContactsListUseCase(lastStateRepository: resolver.resolve(MockLastStateRepository.self)!)
+        }
+        
+        container.register(MockSetLastContactsListUseCase.self) { resolver in
+            MockSetLastContactsListUseCase(lastStateRepository: resolver.resolve(MockLastStateRepository.self)!)
+        }
     }
 }

@@ -8,7 +8,6 @@
 import Foundation
 import Swinject
 
-// swiftlint:disable force_unwrapping
 class ContactUseCaseAssembly: Assembly {
     func assemble(container: Container) {
         container.register(GetContactsUseCase.self) { resolver in

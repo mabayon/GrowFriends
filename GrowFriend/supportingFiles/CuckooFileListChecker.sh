@@ -10,7 +10,10 @@ testableFiles=(
     "ContactsListPresenterImpl.swift"
     "ErrorProtocol.swift"
     "GetContactsUseCase.swift"
+    "GetLastContactsListUseCase.swift"
+    "LastStateRepository.swift"
     "NetworkMoyaProviders.swift"
+    "SetLastContactsListUseCase.swift"
     "Sessions.swift"
 )
 

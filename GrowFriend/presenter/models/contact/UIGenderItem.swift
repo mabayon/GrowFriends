@@ -15,6 +15,14 @@ enum UIGenderItem {
 }
 
 extension UIGenderItem {
+    func toDomain() -> DomainGender {
+        switch self {
+        case .male: return .male
+        case .female: return .female
+        case .uninformed: return .uninformed
+        }
+    }
+    
     func getImage() -> UIImage? {
         switch self {
         case .male: return UIImage(named: "male")

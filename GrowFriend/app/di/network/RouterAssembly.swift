@@ -8,7 +8,6 @@
 import Foundation
 import Swinject
 
-// swiftlint:disable force_unwrapping function_body_length
 class RouterAssembly: Assembly {
     func assemble(container: Container) {
         container.register(UnprotectedMoyaProvider<ContactRouter>.self) { resolver in

@@ -31,8 +31,8 @@
 		4E8DFA9D28A4DEE3002DFC21 /* DomainContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DFA9C28A4DEE3002DFC21 /* DomainContactTests.swift */; };
 		4E8DFA9F28A4DF19002DFC21 /* DomainNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DFA9E28A4DF19002DFC21 /* DomainNameTests.swift */; };
 		4E8DFAA128A4DF3D002DFC21 /* DomainPictureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DFAA028A4DF3D002DFC21 /* DomainPictureTests.swift */; };
-		4E8DFAA728A4E227002DFC21 /* GetContactsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DFAA628A4E227002DFC21 /* GetContactsUseCaseTests.swift */; };
-		4E8EB80B28A5505100E1CB60 /* UIContactItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EB80A28A5505100E1CB60 /* UIContactItemTests.swift */; };
+		4E8DFAA728A4E227002DFC21 /* FetchContactsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DFAA628A4E227002DFC21 /* FetchContactsUseCaseTests.swift */; };
+		4E8EB80B28A5505100E1CB60 /* UIGenderItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EB80A28A5505100E1CB60 /* UIGenderItemTests.swift */; };
 		4E8EB80D28A5547700E1CB60 /* CACornerMaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EB80C28A5547700E1CB60 /* CACornerMaskExtension.swift */; };
 		4E8EB80F28A554A600E1CB60 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EB80E28A554A600E1CB60 /* UIViewExtensions.swift */; };
 		4E8EB81228A55C4100E1CB60 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EB81028A55B1A00E1CB60 /* ImageViewExtension.swift */; };
@@ -68,6 +68,18 @@
 		4EA0DCE228A7D0500063BF5A /* DomainErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCE128A7D0500063BF5A /* DomainErrorTests.swift */; };
 		4EA0DCE528A7D1240063BF5A /* UIErrorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCE428A7D1240063BF5A /* UIErrorItem.swift */; };
 		4EA0DCE728A7D3570063BF5A /* ErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCE628A7D3570063BF5A /* ErrorProtocol.swift */; };
+		4EA0DCED28A7EA290063BF5A /* LastStateRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCEC28A7EA290063BF5A /* LastStateRepositoryImplTests.swift */; };
+		4EA0DCEF28A7EACB0063BF5A /* LastStateRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCEE28A7EACB0063BF5A /* LastStateRepositoryImpl.swift */; };
+		4EA0DCF228A7EAE10063BF5A /* LastStateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCF128A7EAE10063BF5A /* LastStateRepository.swift */; };
+		4EA0DCF428A7EF8C0063BF5A /* LocalRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCF328A7EF8C0063BF5A /* LocalRepositoryAssembly.swift */; };
+		4EA0DCF728A7F9D30063BF5A /* GetLastContactsListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCF628A7F9D30063BF5A /* GetLastContactsListUseCaseTests.swift */; };
+		4EA0DCFA28A7FA0E0063BF5A /* GetLastContactsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCF928A7FA0E0063BF5A /* GetLastContactsListUseCase.swift */; };
+		4EA0DCFE28A8039C0063BF5A /* lastStateUseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCFB28A803280063BF5A /* lastStateUseCaseAssembly.swift */; };
+		4EA0DD0028A804480063BF5A /* SetLastContactsListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DCFF28A804480063BF5A /* SetLastContactsListUseCaseTests.swift */; };
+		4EA0DD0228A804780063BF5A /* SetLastContactsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0128A804780063BF5A /* SetLastContactsListUseCase.swift */; };
+		4EA0DD0428A808F00063BF5A /* UIContactItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0328A808F00063BF5A /* UIContactItemTests.swift */; };
+		4EA0DD0628A809D50063BF5A /* UIPictureItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */; };
+		4EA0DD0828A80A200063BF5A /* UINameItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0728A80A200063BF5A /* UINameItemTests.swift */; };
 		4EA2A7CC28A3CE3700D4815E /* TestAppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7CB28A3CE3700D4815E /* TestAppAssembly.swift */; };
 		4EA2A7CE28A3CE8D00D4815E /* TestNetworkSchedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7CD28A3CE8D00D4815E /* TestNetworkSchedulers.swift */; };
 		4EA2A7D128A3CEE800D4815E /* TestNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */; };
@@ -132,8 +144,8 @@
 		4E8DFA9C28A4DEE3002DFC21 /* DomainContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainContactTests.swift; sourceTree = "<group>"; };
 		4E8DFA9E28A4DF19002DFC21 /* DomainNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainNameTests.swift; sourceTree = "<group>"; };
 		4E8DFAA028A4DF3D002DFC21 /* DomainPictureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainPictureTests.swift; sourceTree = "<group>"; };
-		4E8DFAA628A4E227002DFC21 /* GetContactsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContactsUseCaseTests.swift; sourceTree = "<group>"; };
-		4E8EB80A28A5505100E1CB60 /* UIContactItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIContactItemTests.swift; sourceTree = "<group>"; };
+		4E8DFAA628A4E227002DFC21 /* FetchContactsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContactsUseCaseTests.swift; sourceTree = "<group>"; };
+		4E8EB80A28A5505100E1CB60 /* UIGenderItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGenderItemTests.swift; sourceTree = "<group>"; };
 		4E8EB80C28A5547700E1CB60 /* CACornerMaskExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CACornerMaskExtension.swift; sourceTree = "<group>"; };
 		4E8EB80E28A554A600E1CB60 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		4E8EB81028A55B1A00E1CB60 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
@@ -169,6 +181,18 @@
 		4EA0DCE128A7D0500063BF5A /* DomainErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainErrorTests.swift; sourceTree = "<group>"; };
 		4EA0DCE428A7D1240063BF5A /* UIErrorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIErrorItem.swift; sourceTree = "<group>"; };
 		4EA0DCE628A7D3570063BF5A /* ErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProtocol.swift; sourceTree = "<group>"; };
+		4EA0DCEC28A7EA290063BF5A /* LastStateRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastStateRepositoryImplTests.swift; sourceTree = "<group>"; };
+		4EA0DCEE28A7EACB0063BF5A /* LastStateRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastStateRepositoryImpl.swift; sourceTree = "<group>"; };
+		4EA0DCF128A7EAE10063BF5A /* LastStateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastStateRepository.swift; sourceTree = "<group>"; };
+		4EA0DCF328A7EF8C0063BF5A /* LocalRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepositoryAssembly.swift; sourceTree = "<group>"; };
+		4EA0DCF628A7F9D30063BF5A /* GetLastContactsListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastContactsListUseCaseTests.swift; sourceTree = "<group>"; };
+		4EA0DCF928A7FA0E0063BF5A /* GetLastContactsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastContactsListUseCase.swift; sourceTree = "<group>"; };
+		4EA0DCFB28A803280063BF5A /* lastStateUseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastStateUseCaseAssembly.swift; sourceTree = "<group>"; };
+		4EA0DCFF28A804480063BF5A /* SetLastContactsListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLastContactsListUseCaseTests.swift; sourceTree = "<group>"; };
+		4EA0DD0128A804780063BF5A /* SetLastContactsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLastContactsListUseCase.swift; sourceTree = "<group>"; };
+		4EA0DD0328A808F00063BF5A /* UIContactItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIContactItemTests.swift; sourceTree = "<group>"; };
+		4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPictureItemTests.swift; sourceTree = "<group>"; };
+		4EA0DD0728A80A200063BF5A /* UINameItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINameItemTests.swift; sourceTree = "<group>"; };
 		4EA2A7CB28A3CE3700D4815E /* TestAppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppAssembly.swift; sourceTree = "<group>"; };
 		4EA2A7CD28A3CE8D00D4815E /* TestNetworkSchedulers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkSchedulers.swift; sourceTree = "<group>"; };
 		4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkAssembly.swift; sourceTree = "<group>"; };
@@ -283,6 +307,7 @@
 		4E2F50B428A41726005226E6 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCE928A7E9BA0063BF5A /* local */,
 				4E2F50B728A4178D005226E6 /* network */,
 			);
 			path = repository;
@@ -388,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				4E8DFAA528A4E20C002DFC21 /* contact */,
+				4EA0DCF528A7F9A10063BF5A /* lastState */,
 			);
 			path = useCase;
 			sourceTree = "<group>";
@@ -395,7 +421,7 @@
 		4E8DFAA528A4E20C002DFC21 /* contact */ = {
 			isa = PBXGroup;
 			children = (
-				4E8DFAA628A4E227002DFC21 /* GetContactsUseCaseTests.swift */,
+				4E8DFAA628A4E227002DFC21 /* FetchContactsUseCaseTests.swift */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -403,7 +429,10 @@
 		4E8EB80928A5503F00E1CB60 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4E8EB80A28A5505100E1CB60 /* UIContactItemTests.swift */,
+				4E8EB80A28A5505100E1CB60 /* UIGenderItemTests.swift */,
+				4EA0DD0328A808F00063BF5A /* UIContactItemTests.swift */,
+				4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */,
+				4EA0DD0728A80A200063BF5A /* UINameItemTests.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -511,6 +540,7 @@
 		4E93F6EF28A38A37006AA1BF /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCE828A7E9B10063BF5A /* local */,
 				4E93F6F028A38A3F006AA1BF /* network */,
 			);
 			path = repository;
@@ -537,6 +567,7 @@
 		4E93F6F428A38A7A006AA1BF /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCF028A7EAD20063BF5A /* local */,
 				4E93F6F528A38A7D006AA1BF /* network */,
 			);
 			path = repository;
@@ -575,6 +606,7 @@
 			isa = PBXGroup;
 			children = (
 				4E93F70428A38E86006AA1BF /* contact */,
+				4EA0DCF828A7F9FF0063BF5A /* lastState */,
 			);
 			path = useCase;
 			sourceTree = "<group>";
@@ -716,6 +748,48 @@
 			path = error;
 			sourceTree = "<group>";
 		};
+		4EA0DCE828A7E9B10063BF5A /* local */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCEE28A7EACB0063BF5A /* LastStateRepositoryImpl.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		4EA0DCE928A7E9BA0063BF5A /* local */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCEC28A7EA290063BF5A /* LastStateRepositoryImplTests.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		4EA0DCF028A7EAD20063BF5A /* local */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCF128A7EAE10063BF5A /* LastStateRepository.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		4EA0DCF528A7F9A10063BF5A /* lastState */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCF628A7F9D30063BF5A /* GetLastContactsListUseCaseTests.swift */,
+				4EA0DCFF28A804480063BF5A /* SetLastContactsListUseCaseTests.swift */,
+			);
+			path = lastState;
+			sourceTree = "<group>";
+		};
+		4EA0DCF828A7F9FF0063BF5A /* lastState */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DCF928A7FA0E0063BF5A /* GetLastContactsListUseCase.swift */,
+				4EA0DD0128A804780063BF5A /* SetLastContactsListUseCase.swift */,
+			);
+			path = lastState;
+			sourceTree = "<group>";
+		};
 		4EA2A7CA28A3CE2100D4815E /* app */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +825,7 @@
 		4EBF106B28A3ADA400A3E2A3 /* useCase */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCFB28A803280063BF5A /* lastStateUseCaseAssembly.swift */,
 				4EBF106C28A3ADCC00A3E2A3 /* ContactUseCaseAssembly.swift */,
 			);
 			path = useCase;
@@ -759,6 +834,7 @@
 		4EBF106E28A3ADEF00A3E2A3 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				4EA0DCF328A7EF8C0063BF5A /* LocalRepositoryAssembly.swift */,
 				4EBF106F28A3AE0300A3E2A3 /* NetworkRepositoryAssembly.swift */,
 			);
 			path = repository;
@@ -1202,6 +1278,7 @@
 				4EA0DCDF28A7B7150063BF5A /* RxErrorExtension.swift in Sources */,
 				4E9D80C628A39F200001D885 /* UIContactItem.swift in Sources */,
 				4E9D80CA28A3A09F0001D885 /* ContactsListController.swift in Sources */,
+				4EA0DCFE28A8039C0063BF5A /* lastStateUseCaseAssembly.swift in Sources */,
 				4E93F6FF28A38BAF006AA1BF /* DomainContact.swift in Sources */,
 				4E8C8DF528A3A35E00761EE1 /* SessionsAssembly.swift in Sources */,
 				4E9D80C428A39F200001D885 /* UIContactListItem.swift in Sources */,
@@ -1213,6 +1290,7 @@
 				4EBF107028A3AE0300A3E2A3 /* NetworkRepositoryAssembly.swift in Sources */,
 				4EBF106D28A3ADCC00A3E2A3 /* ContactUseCaseAssembly.swift in Sources */,
 				4E93F6F228A38A54006AA1BF /* ContactRepositoryImpl.swift in Sources */,
+				4EA0DCFA28A7FA0E0063BF5A /* GetLastContactsListUseCase.swift in Sources */,
 				4E93F6DF28A37F59006AA1BF /* PictureResponse.swift in Sources */,
 				4EEC15F728A2E9AB00ADAB3A /* AppDelegate.swift in Sources */,
 				4E93F6EB28A38348006AA1BF /* ContactRouter.swift in Sources */,
@@ -1231,11 +1309,15 @@
 				4E8C8DF728A3A3AF00761EE1 /* RouterAssembly.swift in Sources */,
 				4E93F6F728A38A8B006AA1BF /* ContactRepository.swift in Sources */,
 				4E93F6E228A37FE1006AA1BF /* ContactServiceApiImpl.swift in Sources */,
+				4EA0DCEF28A7EACB0063BF5A /* LastStateRepositoryImpl.swift in Sources */,
 				4E8C8DF328A3A23900761EE1 /* ServiceApiAssembly.swift in Sources */,
 				4EC289A428A5065E00B33A05 /* UITableView+Reusable.swift in Sources */,
+				4EA0DCF228A7EAE10063BF5A /* LastStateRepository.swift in Sources */,
+				4EA0DD0228A804780063BF5A /* SetLastContactsListUseCase.swift in Sources */,
 				4EC2899328A4F1D700B33A05 /* DomainGender.swift in Sources */,
 				4EC289A228A5060C00B33A05 /* Reusable.swift in Sources */,
 				4E93F70228A38BB0006AA1BF /* DomainPicture.swift in Sources */,
+				4EA0DCF428A7EF8C0063BF5A /* LocalRepositoryAssembly.swift in Sources */,
 				4E8C8DF028A3A1B500761EE1 /* AppAssembly.swift in Sources */,
 				4E8EB80D28A5547700E1CB60 /* CACornerMaskExtension.swift in Sources */,
 				4EC2899528A4F26A00B33A05 /* UIGenderItem.swift in Sources */,
@@ -1251,9 +1333,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EFFD57628A2F38100EFFBF5 /* TestAppComponent.swift in Sources */,
+				4EA0DD0628A809D50063BF5A /* UIPictureItemTests.swift in Sources */,
+				4EA0DCF728A7F9D30063BF5A /* GetLastContactsListUseCaseTests.swift in Sources */,
 				4E8DFA9128A4DAD9002DFC21 /* CustomParameterMatchers.swift in Sources */,
 				4EC2899728A4F8C000B33A05 /* DomainGenderTests.swift in Sources */,
-				4E8EB80B28A5505100E1CB60 /* UIContactItemTests.swift in Sources */,
+				4E8EB80B28A5505100E1CB60 /* UIGenderItemTests.swift in Sources */,
 				4E8DFA8828A4D53A002DFC21 /* RxBlockingExtensions.swift in Sources */,
 				4E2F50A828A41508005226E6 /* PresenterFixtures.swift in Sources */,
 				4E8DFA9F28A4DF19002DFC21 /* DomainNameTests.swift in Sources */,
@@ -1263,11 +1347,15 @@
 				4E2F50AD28A415A0005226E6 /* ContactListResponseTests.swift in Sources */,
 				4E2F50A328A40FD6005226E6 /* FixturesConstants.swift in Sources */,
 				4EA2A7D728A3D57300D4815E /* TestRepositoryAssembly.swift in Sources */,
+				4EA0DD0028A804480063BF5A /* SetLastContactsListUseCaseTests.swift in Sources */,
+				4EA0DD0428A808F00063BF5A /* UIContactItemTests.swift in Sources */,
+				4EA0DCED28A7EA290063BF5A /* LastStateRepositoryImplTests.swift in Sources */,
 				4E8DFAA128A4DF3D002DFC21 /* DomainPictureTests.swift in Sources */,
 				4E8DFA9628A4DD6F002DFC21 /* ContactRouterTests.swift in Sources */,
 				4EA0DCE228A7D0500063BF5A /* DomainErrorTests.swift in Sources */,
 				4E8DFA9D28A4DEE3002DFC21 /* DomainContactTests.swift in Sources */,
 				4EA2A7CE28A3CE8D00D4815E /* TestNetworkSchedulers.swift in Sources */,
+				4EA0DD0828A80A200063BF5A /* UINameItemTests.swift in Sources */,
 				4E2F50B628A4175B005226E6 /* ContactRepositoryImplTests.swift in Sources */,
 				4EA2A7D128A3CEE800D4815E /* TestNetworkAssembly.swift in Sources */,
 				4E6DE50628A56DA7006C0CEF /* GeneratedMocks.swift in Sources */,
@@ -1276,7 +1364,7 @@
 				4E2F50A628A41462005226E6 /* DataFixtures.swift in Sources */,
 				4EC2899028A4E44000B33A05 /* ContactsListPresenterImplTests.swift in Sources */,
 				4E2F50AF28A415FC005226E6 /* PictureResponseTests.swift in Sources */,
-				4E8DFAA728A4E227002DFC21 /* GetContactsUseCaseTests.swift in Sources */,
+				4E8DFAA728A4E227002DFC21 /* FetchContactsUseCaseTests.swift in Sources */,
 				4E8DFA9B28A4DE58002DFC21 /* DomainContactListTests.swift in Sources */,
 				4EA0DCD328A7A7010063BF5A /* ErrorResponseTests.swift in Sources */,
 				4EC2899A28A4F9E100B33A05 /* ContactsListDataSourceTests.swift in Sources */,

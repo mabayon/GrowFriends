@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DomainName: Equatable {
+struct DomainName: Equatable, Codable {
     let first: String
     let last: String
 }

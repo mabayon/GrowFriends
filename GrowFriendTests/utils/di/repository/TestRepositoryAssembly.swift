@@ -14,5 +14,6 @@ import Swinject
 class TestRepositoryAssembly: Assembly {
     func assemble(container: Container) {
         container.register(MockContactRepository.self) { _ in MockContactRepository() }
+        container.register(MockLastStateRepository.self) { _ in MockLastStateRepository( )}
     }
 }
