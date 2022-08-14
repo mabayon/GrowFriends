@@ -4,6 +4,7 @@ whotest[0]='test' || (echo 'Failure: arrays not supported in this version of bas
 
 # Please don't forget to sort by filename
 testableFiles=(
+    "ContactDetailsPresenterImpl.swift"
     "ContactRepository.swift"
     "ContactServiceApi.swift"
     "ContactsListDelegate.swift"

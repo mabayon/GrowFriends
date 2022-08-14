@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36A174BD43206C6396DB98DC /* Pods_GrowFriendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C81320A6CB3EE1FCF52437 /* Pods_GrowFriendTests.framework */; };
+		4E28666B28A98A64002C40BA /* ContactDetailsPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28666A28A98A64002C40BA /* ContactDetailsPresenterImpl.swift */; };
+		4E28666E28A98A84002C40BA /* ContactDetailsPresenterImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28666D28A98A84002C40BA /* ContactDetailsPresenterImplTests.swift */; };
 		4E2F509F28A40F8B005226E6 /* DomainFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F509E28A40F8B005226E6 /* DomainFixtures.swift */; };
 		4E2F50A328A40FD6005226E6 /* FixturesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F50A228A40FD6005226E6 /* FixturesConstants.swift */; };
 		4E2F50A628A41462005226E6 /* DataFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F50A528A41462005226E6 /* DataFixtures.swift */; };
@@ -80,6 +82,25 @@
 		4EA0DD0428A808F00063BF5A /* UIContactItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0328A808F00063BF5A /* UIContactItemTests.swift */; };
 		4EA0DD0628A809D50063BF5A /* UIPictureItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */; };
 		4EA0DD0828A80A200063BF5A /* UINameItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0728A80A200063BF5A /* UINameItemTests.swift */; };
+		4EA0DD0A28A950920063BF5A /* LocationResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0928A950920063BF5A /* LocationResponseTests.swift */; };
+		4EA0DD0C28A950E10063BF5A /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0B28A950E10063BF5A /* LocationResponse.swift */; };
+		4EA0DD0E28A9511C0063BF5A /* StreetResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0D28A9511C0063BF5A /* StreetResponseTests.swift */; };
+		4EA0DD1028A951330063BF5A /* StreetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD0F28A951330063BF5A /* StreetResponse.swift */; };
+		4EA0DD1228A9537C0063BF5A /* CoordinatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1128A9537C0063BF5A /* CoordinatesResponse.swift */; };
+		4EA0DD1428A953D60063BF5A /* CoordinatesResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1328A953D60063BF5A /* CoordinatesResponseTests.swift */; };
+		4EA0DD1628A956530063BF5A /* DomainStreetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1528A956530063BF5A /* DomainStreetTests.swift */; };
+		4EA0DD1828A9566A0063BF5A /* DomainCoordinatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1728A9566A0063BF5A /* DomainCoordinatesTests.swift */; };
+		4EA0DD1A28A9568A0063BF5A /* DomainLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1928A9568A0063BF5A /* DomainLocationTests.swift */; };
+		4EA0DD1C28A957090063BF5A /* DomainLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1B28A957090063BF5A /* DomainLocation.swift */; };
+		4EA0DD1E28A9570F0063BF5A /* DomainCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1D28A9570F0063BF5A /* DomainCoordinates.swift */; };
+		4EA0DD2028A957160063BF5A /* DomainStreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD1F28A957160063BF5A /* DomainStreet.swift */; };
+		4EA0DD2228A957890063BF5A /* UIStreetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD2128A957890063BF5A /* UIStreetItem.swift */; };
+		4EA0DD2428A957930063BF5A /* UICoordinatesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD2328A957930063BF5A /* UICoordinatesItem.swift */; };
+		4EA0DD2628A9579A0063BF5A /* UILocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD2528A9579A0063BF5A /* UILocationItem.swift */; };
+		4EA0DD2828A95BFD0063BF5A /* UILocationItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD2728A95BFD0063BF5A /* UILocationItemTests.swift */; };
+		4EA0DD2A28A95C090063BF5A /* UICoordinatesItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD2928A95C090063BF5A /* UICoordinatesItemTests.swift */; };
+		4EA0DD2C28A95C190063BF5A /* UIStreetItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD2B28A95C190063BF5A /* UIStreetItemTests.swift */; };
+		4EA0DD3128A964540063BF5A /* ContactDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0DD3028A964540063BF5A /* ContactDetailsController.swift */; };
 		4EA2A7CC28A3CE3700D4815E /* TestAppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7CB28A3CE3700D4815E /* TestAppAssembly.swift */; };
 		4EA2A7CE28A3CE8D00D4815E /* TestNetworkSchedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7CD28A3CE8D00D4815E /* TestNetworkSchedulers.swift */; };
 		4EA2A7D128A3CEE800D4815E /* TestNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */; };
@@ -122,6 +143,8 @@
 
 /* Begin PBXFileReference section */
 		02F687C59FE75BE344C27D1A /* Pods-GrowFriend-GrowFriendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowFriend-GrowFriendUITests.release.xcconfig"; path = "Target Support Files/Pods-GrowFriend-GrowFriendUITests/Pods-GrowFriend-GrowFriendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E28666A28A98A64002C40BA /* ContactDetailsPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsPresenterImpl.swift; sourceTree = "<group>"; };
+		4E28666D28A98A84002C40BA /* ContactDetailsPresenterImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsPresenterImplTests.swift; sourceTree = "<group>"; };
 		4E2F509E28A40F8B005226E6 /* DomainFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainFixtures.swift; sourceTree = "<group>"; };
 		4E2F50A228A40FD6005226E6 /* FixturesConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesConstants.swift; sourceTree = "<group>"; };
 		4E2F50A528A41462005226E6 /* DataFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFixtures.swift; sourceTree = "<group>"; };
@@ -193,6 +216,25 @@
 		4EA0DD0328A808F00063BF5A /* UIContactItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIContactItemTests.swift; sourceTree = "<group>"; };
 		4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPictureItemTests.swift; sourceTree = "<group>"; };
 		4EA0DD0728A80A200063BF5A /* UINameItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINameItemTests.swift; sourceTree = "<group>"; };
+		4EA0DD0928A950920063BF5A /* LocationResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponseTests.swift; sourceTree = "<group>"; };
+		4EA0DD0B28A950E10063BF5A /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
+		4EA0DD0D28A9511C0063BF5A /* StreetResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetResponseTests.swift; sourceTree = "<group>"; };
+		4EA0DD0F28A951330063BF5A /* StreetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetResponse.swift; sourceTree = "<group>"; };
+		4EA0DD1128A9537C0063BF5A /* CoordinatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesResponse.swift; sourceTree = "<group>"; };
+		4EA0DD1328A953D60063BF5A /* CoordinatesResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesResponseTests.swift; sourceTree = "<group>"; };
+		4EA0DD1528A956530063BF5A /* DomainStreetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainStreetTests.swift; sourceTree = "<group>"; };
+		4EA0DD1728A9566A0063BF5A /* DomainCoordinatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainCoordinatesTests.swift; sourceTree = "<group>"; };
+		4EA0DD1928A9568A0063BF5A /* DomainLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainLocationTests.swift; sourceTree = "<group>"; };
+		4EA0DD1B28A957090063BF5A /* DomainLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainLocation.swift; sourceTree = "<group>"; };
+		4EA0DD1D28A9570F0063BF5A /* DomainCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainCoordinates.swift; sourceTree = "<group>"; };
+		4EA0DD1F28A957160063BF5A /* DomainStreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainStreet.swift; sourceTree = "<group>"; };
+		4EA0DD2128A957890063BF5A /* UIStreetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStreetItem.swift; sourceTree = "<group>"; };
+		4EA0DD2328A957930063BF5A /* UICoordinatesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinatesItem.swift; sourceTree = "<group>"; };
+		4EA0DD2528A9579A0063BF5A /* UILocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILocationItem.swift; sourceTree = "<group>"; };
+		4EA0DD2728A95BFD0063BF5A /* UILocationItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILocationItemTests.swift; sourceTree = "<group>"; };
+		4EA0DD2928A95C090063BF5A /* UICoordinatesItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinatesItemTests.swift; sourceTree = "<group>"; };
+		4EA0DD2B28A95C190063BF5A /* UIStreetItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStreetItemTests.swift; sourceTree = "<group>"; };
+		4EA0DD3028A964540063BF5A /* ContactDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsController.swift; sourceTree = "<group>"; };
 		4EA2A7CB28A3CE3700D4815E /* TestAppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppAssembly.swift; sourceTree = "<group>"; };
 		4EA2A7CD28A3CE8D00D4815E /* TestNetworkSchedulers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkSchedulers.swift; sourceTree = "<group>"; };
 		4EA2A7D028A3CEE800D4815E /* TestNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkAssembly.swift; sourceTree = "<group>"; };
@@ -254,6 +296,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E28666C28A98A71002C40BA /* contactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4E28666D28A98A84002C40BA /* ContactDetailsPresenterImplTests.swift */,
+			);
+			path = contactDetails;
+			sourceTree = "<group>";
+		};
 		4E2F509B28A40F61005226E6 /* fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,10 +346,13 @@
 		4E2F50AB28A41587005226E6 /* contact */ = {
 			isa = PBXGroup;
 			children = (
-				4E2F50AE28A415FC005226E6 /* PictureResponseTests.swift */,
-				4E2F50B028A415FD005226E6 /* NameResponseTests.swift */,
-				4E2F50B228A415FF005226E6 /* ContactResponseTests.swift */,
 				4E2F50AC28A415A0005226E6 /* ContactListResponseTests.swift */,
+				4E2F50B228A415FF005226E6 /* ContactResponseTests.swift */,
+				4EA0DD1328A953D60063BF5A /* CoordinatesResponseTests.swift */,
+				4EA0DD0928A950920063BF5A /* LocationResponseTests.swift */,
+				4E2F50B028A415FD005226E6 /* NameResponseTests.swift */,
+				4E2F50AE28A415FC005226E6 /* PictureResponseTests.swift */,
+				4EA0DD0D28A9511C0063BF5A /* StreetResponseTests.swift */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -402,9 +455,12 @@
 			children = (
 				4E8DFA9A28A4DE58002DFC21 /* DomainContactListTests.swift */,
 				4E8DFA9C28A4DEE3002DFC21 /* DomainContactTests.swift */,
+				4EA0DD1728A9566A0063BF5A /* DomainCoordinatesTests.swift */,
+				4EC2899628A4F8C000B33A05 /* DomainGenderTests.swift */,
+				4EA0DD1928A9568A0063BF5A /* DomainLocationTests.swift */,
 				4E8DFA9E28A4DF19002DFC21 /* DomainNameTests.swift */,
 				4E8DFAA028A4DF3D002DFC21 /* DomainPictureTests.swift */,
-				4EC2899628A4F8C000B33A05 /* DomainGenderTests.swift */,
+				4EA0DD1528A956530063BF5A /* DomainStreetTests.swift */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -429,10 +485,13 @@
 		4E8EB80928A5503F00E1CB60 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4E8EB80A28A5505100E1CB60 /* UIGenderItemTests.swift */,
 				4EA0DD0328A808F00063BF5A /* UIContactItemTests.swift */,
-				4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */,
+				4EA0DD2928A95C090063BF5A /* UICoordinatesItemTests.swift */,
+				4E8EB80A28A5505100E1CB60 /* UIGenderItemTests.swift */,
+				4EA0DD2728A95BFD0063BF5A /* UILocationItemTests.swift */,
 				4EA0DD0728A80A200063BF5A /* UINameItemTests.swift */,
+				4EA0DD0528A809D50063BF5A /* UIPictureItemTests.swift */,
+				4EA0DD2B28A95C190063BF5A /* UIStreetItemTests.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -486,8 +545,8 @@
 		4E93F6D428A3795F006AA1BF /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4EA0DCD028A7A6E20063BF5A /* error */,
 				4E93F6D628A37975006AA1BF /* contact */,
+				4EA0DCD028A7A6E20063BF5A /* error */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -497,8 +556,11 @@
 			children = (
 				4E93F6DA28A37F23006AA1BF /* ContactListResponse.swift */,
 				4E93F6D728A3798B006AA1BF /* ContactResponse.swift */,
+				4EA0DD1128A9537C0063BF5A /* CoordinatesResponse.swift */,
+				4EA0DD0B28A950E10063BF5A /* LocationResponse.swift */,
 				4E93F6DC28A37F3F006AA1BF /* NameResponse.swift */,
 				4E93F6DE28A37F59006AA1BF /* PictureResponse.swift */,
+				4EA0DD0F28A951330063BF5A /* StreetResponse.swift */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -584,8 +646,8 @@
 		4E93F6F828A38B2F006AA1BF /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4EA0DCD628A7A8080063BF5A /* error */,
 				4E93F6FA28A38B3B006AA1BF /* contact */,
+				4EA0DCD628A7A8080063BF5A /* error */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -595,9 +657,12 @@
 			children = (
 				4E93F6FB28A38B49006AA1BF /* DomainContact.swift */,
 				4E93F6FD28A38B49006AA1BF /* DomainContactList.swift */,
+				4EA0DD1D28A9570F0063BF5A /* DomainCoordinates.swift */,
 				4EC2899228A4F1D700B33A05 /* DomainGender.swift */,
+				4EA0DD1B28A957090063BF5A /* DomainLocation.swift */,
 				4E93F6FE28A38B49006AA1BF /* DomainName.swift */,
 				4E93F6FC28A38B49006AA1BF /* DomainPicture.swift */,
+				4EA0DD1F28A957160063BF5A /* DomainStreet.swift */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -634,6 +699,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9D80C828A3A07D0001D885 /* contact */,
+				4EA0DD2F28A964310063BF5A /* contactDetails */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -671,8 +737,8 @@
 		4E9D80BE28A39E250001D885 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4EA0DCE328A7D1180063BF5A /* error */,
 				4E9D80BF28A39E9C0001D885 /* contact */,
+				4EA0DCE328A7D1180063BF5A /* error */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -682,9 +748,12 @@
 			children = (
 				4E9D80C028A39EAF0001D885 /* UIContactItem.swift */,
 				4E9D80C228A39EAF0001D885 /* UIContactListItem.swift */,
+				4EA0DD2328A957930063BF5A /* UICoordinatesItem.swift */,
 				4EC2899428A4F26A00B33A05 /* UIGenderItem.swift */,
+				4EA0DD2528A9579A0063BF5A /* UILocationItem.swift */,
 				4E9D80C328A39EAF0001D885 /* UINameItem.swift */,
 				4E9D80C128A39EAF0001D885 /* UIPictureItem.swift */,
+				4EA0DD2128A957890063BF5A /* UIStreetItem.swift */,
 			);
 			path = contact;
 			sourceTree = "<group>";
@@ -790,6 +859,15 @@
 			path = lastState;
 			sourceTree = "<group>";
 		};
+		4EA0DD2F28A964310063BF5A /* contactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0DD3028A964540063BF5A /* ContactDetailsController.swift */,
+				4E28666A28A98A64002C40BA /* ContactDetailsPresenterImpl.swift */,
+			);
+			path = contactDetails;
+			sourceTree = "<group>";
+		};
 		4EA2A7CA28A3CE2100D4815E /* app */ = {
 			isa = PBXGroup;
 			children = (
@@ -853,6 +931,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC2898E28A4E42600B33A05 /* contact */,
+				4E28666C28A98A71002C40BA /* contactDetails */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -1267,7 +1346,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA0DD2228A957890063BF5A /* UIStreetItem.swift in Sources */,
 				4EA0DCDA28A7AF2A0063BF5A /* DataError.swift in Sources */,
+				4EA0DD1E28A9570F0063BF5A /* DomainCoordinates.swift in Sources */,
 				4EFFD56928A2F0FA00EFFBF5 /* ViewControllerDescriptible.swift in Sources */,
 				4E93F70628A38ED1006AA1BF /* GetContactsUseCase.swift in Sources */,
 				4E93F70E28A3923B006AA1BF /* NetworkSchedulers.swift in Sources */,
@@ -1276,6 +1357,7 @@
 				4E93F6D828A3798B006AA1BF /* ContactResponse.swift in Sources */,
 				4EC289A028A5018100B33A05 /* ContactCardCell.swift in Sources */,
 				4EA0DCDF28A7B7150063BF5A /* RxErrorExtension.swift in Sources */,
+				4EA0DD1028A951330063BF5A /* StreetResponse.swift in Sources */,
 				4E9D80C628A39F200001D885 /* UIContactItem.swift in Sources */,
 				4E9D80CA28A3A09F0001D885 /* ContactsListController.swift in Sources */,
 				4EA0DCFE28A8039C0063BF5A /* lastStateUseCaseAssembly.swift in Sources */,
@@ -1284,18 +1366,22 @@
 				4E9D80C428A39F200001D885 /* UIContactListItem.swift in Sources */,
 				4E93F6E528A380DA006AA1BF /* NetworkMoyaProviders.swift in Sources */,
 				4EC2899D28A4FAC100B33A05 /* ContactsListDataSource.swift in Sources */,
+				4EA0DD1C28A957090063BF5A /* DomainLocation.swift in Sources */,
 				4E93F6D228A37864006AA1BF /* ContactServiceApi.swift in Sources */,
 				4E93F6DB28A37F23006AA1BF /* ContactListResponse.swift in Sources */,
 				4E8EB80F28A554A600E1CB60 /* UIViewExtensions.swift in Sources */,
 				4EBF107028A3AE0300A3E2A3 /* NetworkRepositoryAssembly.swift in Sources */,
 				4EBF106D28A3ADCC00A3E2A3 /* ContactUseCaseAssembly.swift in Sources */,
 				4E93F6F228A38A54006AA1BF /* ContactRepositoryImpl.swift in Sources */,
+				4E28666B28A98A64002C40BA /* ContactDetailsPresenterImpl.swift in Sources */,
 				4EA0DCFA28A7FA0E0063BF5A /* GetLastContactsListUseCase.swift in Sources */,
+				4EA0DD2428A957930063BF5A /* UICoordinatesItem.swift in Sources */,
 				4E93F6DF28A37F59006AA1BF /* PictureResponse.swift in Sources */,
 				4EEC15F728A2E9AB00ADAB3A /* AppDelegate.swift in Sources */,
 				4E93F6EB28A38348006AA1BF /* ContactRouter.swift in Sources */,
 				4E93F6DD28A37F3F006AA1BF /* NameResponse.swift in Sources */,
 				4E9D80C528A39F200001D885 /* UINameItem.swift in Sources */,
+				4EA0DD1228A9537C0063BF5A /* CoordinatesResponse.swift in Sources */,
 				4EA0DCE528A7D1240063BF5A /* UIErrorItem.swift in Sources */,
 				4EAB0C9F28A631A6001E5AB9 /* ContactsListDelegate.swift in Sources */,
 				4E93F70028A38BAF006AA1BF /* DomainContactList.swift in Sources */,
@@ -1303,6 +1389,7 @@
 				4EC289A728A50A2400B33A05 /* DataSourceAssembly.swift in Sources */,
 				4E9D80C728A39F200001D885 /* UIPictureItem.swift in Sources */,
 				4EEC15F928A2E9AB00ADAB3A /* SceneDelegate.swift in Sources */,
+				4EA0DD0C28A950E10063BF5A /* LocationResponse.swift in Sources */,
 				4EFFD56428A2F00000EFFBF5 /* AppComponent.swift in Sources */,
 				4E93F71228A3932F006AA1BF /* DisposeProvider.swift in Sources */,
 				4E8EB81228A55C4100E1CB60 /* ImageViewExtension.swift in Sources */,
@@ -1315,6 +1402,7 @@
 				4EA0DCF228A7EAE10063BF5A /* LastStateRepository.swift in Sources */,
 				4EA0DD0228A804780063BF5A /* SetLastContactsListUseCase.swift in Sources */,
 				4EC2899328A4F1D700B33A05 /* DomainGender.swift in Sources */,
+				4EA0DD3128A964540063BF5A /* ContactDetailsController.swift in Sources */,
 				4EC289A228A5060C00B33A05 /* Reusable.swift in Sources */,
 				4E93F70228A38BB0006AA1BF /* DomainPicture.swift in Sources */,
 				4EA0DCF428A7EF8C0063BF5A /* LocalRepositoryAssembly.swift in Sources */,
@@ -1322,6 +1410,8 @@
 				4E8EB80D28A5547700E1CB60 /* CACornerMaskExtension.swift in Sources */,
 				4EC2899528A4F26A00B33A05 /* UIGenderItem.swift in Sources */,
 				4E93F70128A38BAF006AA1BF /* DomainName.swift in Sources */,
+				4EA0DD2628A9579A0063BF5A /* UILocationItem.swift in Sources */,
+				4EA0DD2028A957160063BF5A /* DomainStreet.swift in Sources */,
 				4E93F70A28A390C1006AA1BF /* ContactsListPresenterImpl.swift in Sources */,
 				4EA0DCE728A7D3570063BF5A /* ErrorProtocol.swift in Sources */,
 				4EA0DCDC28A7B1B00063BF5A /* DomainError.swift in Sources */,
@@ -1332,23 +1422,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E28666E28A98A84002C40BA /* ContactDetailsPresenterImplTests.swift in Sources */,
+				4EA0DD0A28A950920063BF5A /* LocationResponseTests.swift in Sources */,
 				4EFFD57628A2F38100EFFBF5 /* TestAppComponent.swift in Sources */,
 				4EA0DD0628A809D50063BF5A /* UIPictureItemTests.swift in Sources */,
 				4EA0DCF728A7F9D30063BF5A /* GetLastContactsListUseCaseTests.swift in Sources */,
+				4EA0DD1628A956530063BF5A /* DomainStreetTests.swift in Sources */,
 				4E8DFA9128A4DAD9002DFC21 /* CustomParameterMatchers.swift in Sources */,
 				4EC2899728A4F8C000B33A05 /* DomainGenderTests.swift in Sources */,
 				4E8EB80B28A5505100E1CB60 /* UIGenderItemTests.swift in Sources */,
 				4E8DFA8828A4D53A002DFC21 /* RxBlockingExtensions.swift in Sources */,
 				4E2F50A828A41508005226E6 /* PresenterFixtures.swift in Sources */,
 				4E8DFA9F28A4DF19002DFC21 /* DomainNameTests.swift in Sources */,
+				4EA0DD2828A95BFD0063BF5A /* UILocationItemTests.swift in Sources */,
 				4E2F509F28A40F8B005226E6 /* DomainFixtures.swift in Sources */,
 				4E8DFA9328A4DAFF002DFC21 /* MoyaUtils.swift in Sources */,
+				4EA0DD2A28A95C090063BF5A /* UICoordinatesItemTests.swift in Sources */,
 				4E2F50B128A415FD005226E6 /* NameResponseTests.swift in Sources */,
 				4E2F50AD28A415A0005226E6 /* ContactListResponseTests.swift in Sources */,
 				4E2F50A328A40FD6005226E6 /* FixturesConstants.swift in Sources */,
 				4EA2A7D728A3D57300D4815E /* TestRepositoryAssembly.swift in Sources */,
 				4EA0DD0028A804480063BF5A /* SetLastContactsListUseCaseTests.swift in Sources */,
 				4EA0DD0428A808F00063BF5A /* UIContactItemTests.swift in Sources */,
+				4EA0DD1828A9566A0063BF5A /* DomainCoordinatesTests.swift in Sources */,
 				4EA0DCED28A7EA290063BF5A /* LastStateRepositoryImplTests.swift in Sources */,
 				4E8DFAA128A4DF3D002DFC21 /* DomainPictureTests.swift in Sources */,
 				4E8DFA9628A4DD6F002DFC21 /* ContactRouterTests.swift in Sources */,
@@ -1357,17 +1453,21 @@
 				4EA2A7CE28A3CE8D00D4815E /* TestNetworkSchedulers.swift in Sources */,
 				4EA0DD0828A80A200063BF5A /* UINameItemTests.swift in Sources */,
 				4E2F50B628A4175B005226E6 /* ContactRepositoryImplTests.swift in Sources */,
+				4EA0DD1A28A9568A0063BF5A /* DomainLocationTests.swift in Sources */,
 				4EA2A7D128A3CEE800D4815E /* TestNetworkAssembly.swift in Sources */,
 				4E6DE50628A56DA7006C0CEF /* GeneratedMocks.swift in Sources */,
 				4E2F50B328A415FF005226E6 /* ContactResponseTests.swift in Sources */,
 				4EA2A7DA28A3D61000D4815E /* TestUseCaseAssembly.swift in Sources */,
+				4EA0DD1428A953D60063BF5A /* CoordinatesResponseTests.swift in Sources */,
 				4E2F50A628A41462005226E6 /* DataFixtures.swift in Sources */,
 				4EC2899028A4E44000B33A05 /* ContactsListPresenterImplTests.swift in Sources */,
 				4E2F50AF28A415FC005226E6 /* PictureResponseTests.swift in Sources */,
+				4EA0DD2C28A95C190063BF5A /* UIStreetItemTests.swift in Sources */,
 				4E8DFAA728A4E227002DFC21 /* FetchContactsUseCaseTests.swift in Sources */,
 				4E8DFA9B28A4DE58002DFC21 /* DomainContactListTests.swift in Sources */,
 				4EA0DCD328A7A7010063BF5A /* ErrorResponseTests.swift in Sources */,
 				4EC2899A28A4F9E100B33A05 /* ContactsListDataSourceTests.swift in Sources */,
+				4EA0DD0E28A9511C0063BF5A /* StreetResponseTests.swift in Sources */,
 				4EA2A7CC28A3CE3700D4815E /* TestAppAssembly.swift in Sources */,
 				4E8DFA8F28A4D747002DFC21 /* ContactServiceApiTests.swift in Sources */,
 			);

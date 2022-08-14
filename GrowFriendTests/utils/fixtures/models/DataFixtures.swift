@@ -25,7 +25,8 @@ class DataFixtures {
                           name: NameResponseUtils.createFemale(),
                           email: FixturesConstants.ContactFemale.email,
                           phone: FixturesConstants.ContactFemale.phone,
-                          picture: PictureResponseUtils.createFemale())
+                          picture: PictureResponseUtils.createFemale(),
+                            location: LocationResponseUtils.createFemale())
         }
         
         static func createMale() -> ContactResponse {
@@ -33,7 +34,18 @@ class DataFixtures {
                           name: NameResponseUtils.createMale(),
                           email: FixturesConstants.ContactMale.email,
                           phone: FixturesConstants.ContactMale.phone,
-                          picture: PictureResponseUtils.createMale())
+                          picture: PictureResponseUtils.createMale(),
+                            location: LocationResponseUtils.createMale())
+        }
+    }
+    
+    class CoordinatesResponseUtils {
+        static func createFemale() -> CoordinatesResponse {
+            CoordinatesResponse(latitude: "\(FixturesConstants.ContactFemale.latitude)", longitude: "\(FixturesConstants.ContactFemale.longitude)")
+        }
+        
+        static func createMale() -> CoordinatesResponse {
+            CoordinatesResponse(latitude: "\(FixturesConstants.ContactMale.latitude)", longitude: "\(FixturesConstants.ContactMale.longitude)")
         }
     }
 
@@ -46,7 +58,23 @@ class DataFixtures {
             DataAPIDecodeException(errorMessage: FixturesConstants.errorMessage)
         }
     }
-
+    
+    class LocationResponseUtils {
+        static func createFemale() -> LocationResponse {
+            LocationResponse(street: StreetResponseUtils.createFemale(),
+                             city: FixturesConstants.ContactFemale.city,
+                             country: FixturesConstants.ContactMale.country,
+                             coordinates: CoordinatesResponseUtils.createFemale())
+        }
+        
+        static func createMale() -> LocationResponse {
+            LocationResponse(street: StreetResponseUtils.createMale(),
+                             city: FixturesConstants.ContactMale.city,
+                             country: FixturesConstants.ContactMale.country,
+                             coordinates: CoordinatesResponseUtils.createMale())
+        }
+    }
+    
     class NameResponseUtils {
         static func createFemale() -> NameResponse {
             NameResponse(first: FixturesConstants.ContactFemale.firstName,
@@ -58,6 +86,7 @@ class DataFixtures {
                        last: FixturesConstants.ContactMale.lastName)
         }
     }
+
     class PictureResponseUtils {
         static func createFemale() -> PictureResponse {
             PictureResponse(large: FixturesConstants.ContactFemale.large,
@@ -69,6 +98,16 @@ class DataFixtures {
             PictureResponse(large: FixturesConstants.ContactMale.large,
                           medium: FixturesConstants.ContactMale.medium,
                           thumbnail: FixturesConstants.ContactMale.thumbnail)
+        }
+    }
+    
+    class StreetResponseUtils {
+        static func createFemale() -> StreetResponse {
+            StreetResponse(number: FixturesConstants.ContactFemale.streetNumber, name: FixturesConstants.ContactFemale.streetName)
+        }
+        
+        static func createMale() -> StreetResponse {
+            StreetResponse(number: FixturesConstants.ContactMale.streetNumber, name: FixturesConstants.ContactMale.streetName)
         }
     }
 }

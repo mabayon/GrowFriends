@@ -24,7 +24,7 @@ class ContactsListDataSource: NSObject, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(indexPath: indexPath) as ContactCardCell
-        
+
         if isLoadingCell(for: indexPath) || currentsItems.isEmpty {
             cell.onBind(item: .none)
         } else {
@@ -39,9 +39,15 @@ class ContactsListDataSource: NSObject, UITableViewDataSource {
     }
 }
 
+extension ContactsListDataSource: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelectItem(item: currentsItems[indexPath.row])
+    }
+}
+
 extension ContactsListDataSource: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        if indexPaths.contains(where: isLoadingCell) {
+        if indexPaths.map({ _ in tableView.indexPathsForVisibleRows?.contains(where: isLoadingCell(for:) ) ?? false }).contains(where: { $0 }) {
             delegate?.fetchNewContacts()
         }
     }

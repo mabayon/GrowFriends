@@ -9,4 +9,5 @@ import Foundation
 
 protocol ContactsListDelegate: AnyObject {
     func fetchNewContacts()
+    func didSelectItem(item: UIContactItem)
 }
