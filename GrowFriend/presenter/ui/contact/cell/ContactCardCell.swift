@@ -88,7 +88,7 @@ class ContactCardCell: UITableViewCell, Reusable {
         contentView.addSubview(containerView)
         
         containerView.snp.makeConstraints { make in
-            make.top.equalTo(contentView).offset(8)
+            make.top.equalTo(contentView).offset(13)
             make.left.equalTo(contentView).offset(8)
             make.right.equalTo(contentView).offset(-8)
             make.bottom.equalTo(contentView).offset(-8)

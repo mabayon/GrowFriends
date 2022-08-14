@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DomainPicture: Equatable {
+struct DomainPicture: Equatable, Codable {
     let large: String
     let medium: String
     let thumbnail: String

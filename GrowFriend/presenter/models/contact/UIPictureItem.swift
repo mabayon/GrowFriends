@@ -12,3 +12,9 @@ struct UIPictureItem: Equatable {
     let medium: String
     let thumbnail: String
 }
+
+extension UIPictureItem {
+    func toDomain() -> DomainPicture {
+        DomainPicture(large: large, medium: medium, thumbnail: thumbnail)
+    }
+}

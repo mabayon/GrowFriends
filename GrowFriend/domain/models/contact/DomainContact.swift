@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DomainContact: Equatable {
+struct DomainContact: Equatable, Codable {
     let gender: DomainGender
     let name: DomainName
     let email: String

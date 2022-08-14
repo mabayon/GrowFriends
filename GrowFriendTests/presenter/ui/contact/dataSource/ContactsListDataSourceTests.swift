@@ -29,7 +29,12 @@ class ContactsListDataSourceTests: XCTestCase {
         verifyNoMoreInteractions(mockContactsListDelegate)
     }
     
-    func testNumberOfRowsInSection() {
+    func testNumberOfRowsInSectionWhenItemsEmpty() {
+        dataSource.updateData(newItems: [])
+        XCTAssertEqual(dataSource.tableView(tableView, numberOfRowsInSection: 0), 10)
+    }
+
+    func testNumberOfRowsInSectionWhenItemsNotEmpty() {
         XCTAssertEqual(dataSource.tableView(tableView, numberOfRowsInSection: 0), expectedItems.count + 1)
     }
     

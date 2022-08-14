@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DomainGender: String {
+enum DomainGender: String, Codable {
     case male
     case female
     case uninformed

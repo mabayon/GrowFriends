@@ -27,10 +27,12 @@ extension Assembler {
             ContactPresenterAssembly(),
             
             // Repository
+            LocalRepositoryAssembly(),
             NetworkRepositoryAssembly(),
             
             // Use Case
-            ContactUseCaseAssembly()
+            ContactUseCaseAssembly(),
+            lastStateUseCaseAssembly()
         ], container: container)
 
         return assembler

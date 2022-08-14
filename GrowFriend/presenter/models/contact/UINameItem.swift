@@ -11,3 +11,9 @@ struct UINameItem: Equatable {
     let first: String
     let last: String
 }
+
+extension UINameItem {
+    func toDomain() -> DomainName {
+        DomainName(first: first, last: last)
+    }
+}
